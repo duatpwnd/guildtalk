@@ -45,8 +45,9 @@
                         flag = true;
                         return false;
                     }
-
+                    /* 2019.02.15 수정 :: S */
                     $('.w_1').append('<li class="data1 com' + i + '"><div class="info3"><a href="#" class="profile2"><img src="images/p.png" alt="프로필" title="프로필"></a> <a href="#">인중타격</a> <span class = "ymd">' + year + '.' + month + '.' + day + '</span> <span class = "time_info">' + hours + ':' + minutes + '</span><div class="writting' + (i + 1) + '"></div></div><div class="a_wrap"><a href="#" class="l_a res"><img src="images/n1.png" class="res_ico1">답글</a><a href="#" class="l_a l_a_center mo">수정</a><a href="#" class="l_a rev">삭제</a><a href="#" class="n_a0 r_a"><img src="images/no.png" class = "res_ico2"><span class="o_counting"></span></a><a href="#" class="r_a0"><img src="images/ok.png" class = "res_ico2"><span class="n_counting"></span></a></div><div class ="rbox"><div class ="en_wrap"><textarea class = "comment1" rows="5"></textarea><button class = "en_btn">등록</button><div></div></li>');
+                    /* 2019.02.15 수정 :: E */
                     i++;
                     $('.writting' + i).css({
                         'margin-left': '10%',

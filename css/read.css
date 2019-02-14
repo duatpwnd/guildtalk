@@ -281,6 +281,7 @@ section .info1 .info2 .bar {
     color: #969696;
 }
 
+/* 2019.02.15 수정 :: S */
 .sec4 .w_1 .data1 .info3 .writting1 {
     width: 80%;
     font-size: 1.4rem;
@@ -289,7 +290,7 @@ section .info1 .info2 .bar {
     word-break: break-all;
     white-space: pre-wrap;
 }
-
+/* 2019.02.15 수정 :: E */
 .sec4 .w_1 .data1 .info3 .reply1 {
     width: 90%;
     margin-left: 10%;
