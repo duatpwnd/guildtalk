@@ -42,8 +42,10 @@
 #wrap section .exile_member {
     position: relative;
     padding: 3% 0;
+    /* 2019.02.15 추가 :: S  */
     background-repeat: no-repeat !important;
     background-size: 100% 100% !important;
+    /* 2019.02.15 추가 :: E  */
 }
 #wrap section .exile_member .top_menu:after {
     display: block;
