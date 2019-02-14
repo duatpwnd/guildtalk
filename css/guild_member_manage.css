@@ -384,14 +384,14 @@
     text-align: center;
     margin-top: 3%;
 }
-
+/* 2019.02.15 수정 :: S  */
 .page_show a {
     font-size: 2rem;
     width: 13%;
     display: inline-block;
     color: black;
 }
-
+/* 2019.02.15 수정 :: E  */
 .join {
     position: absolute;
     top: 0;
