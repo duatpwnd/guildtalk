@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>친구초대하기</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="css/mylist.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="search_menu menu_ch">
+                <input type="text" id="spc_search" class="nickname_enter" placeholder="검색" onkeyup="search1();">
+                <button type="button" class="nickname_search"></button>
+            </div>
+            <a href="chat_room.html" class="confirm">확인</a>
+        </header>
+
+        <div class="member_list member_list1">
+            <ul class="member_list_wrap">
+                <li class="member_counting">
+                    <a href="#" class="bookmark">
+                        즐겨찾기
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="profile_thumb ch_thumb">
+                        <img src="images/test4.png" alt="게임프로필" title="게임프로필">
+                    </a>
+                    <a href="#" class="member_info">
+                        <input type="checkbox" id="mobile1" checked="" class="chk_box">
+                        <label for="mobile1" class="user_id user_ch">더블드래곤
+                            <span class="chk1"></span>
+                        </label>
+                    </a>
+                </li>
+                <li class="member_counting">
+                    <a href="#" class="bookmark">
+                        내친구
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="profile_thumb ch_thumb">
+                        <img src="images/test4.png" alt="게임프로필" title="게임프로필">
+                    </a>
+                    <a href="#" class="member_info">
+                        <input type="checkbox" id="mobile2" class="chk_box">
+                        <label for="mobile2" class="user_id user_ch">더블드래곤
+                            <span class="chk1"></span>
+                        </label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

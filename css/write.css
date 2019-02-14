@@ -1,0 +1,98 @@
+header .enroll_btn {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 134%;
+    height: 46%;
+  }
+  .guild {
+    padding-bottom: 30%;
+  }
+  select {
+    width: 100%;
+    font-size: 1.75rem;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2%;
+  }
+  .btn_wrap1 {
+    margin-top: 4%;
+  }
+  .btn_wrap2:after,
+  .btn_wrap1:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .btn_wrap2 input,
+  .btn_wrap1 a {
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 284%;
+    border: 0;
+    color: white;
+    width: 50%;
+    display: inline-block;
+  }
+  .btn_wrap2 .cancel_btn1,
+  .btn_wrap1 .btn1 {
+    float: left;
+    background: #505050;
+  }
+  .btn_wrap2 .ok_btn1,
+  .btn_wrap1 .btn2 {
+    float: right;
+    background: #e43737;
+  }
+  .btn_wrap2 .btn3,
+  .btn_wrap1 .btn3,
+  .btn_wrap2 .btn4,
+  .btn_wrap1 .btn4 {
+    box-sizing: border-box;
+    background: white;
+  }
+  .btn_wrap2 .btn3,
+  .btn_wrap1 .btn3 {
+    border: 1px solid #e43737;
+    color: #e43737;
+  }
+  .btn_wrap2 .btn4,
+  .btn_wrap1 .btn4 {
+    border: 1px solid #ccc;
+    color: #ccc;
+  }
+  .write {
+    margin-top: 2%;
+  }
+  .write input {
+    display: block;
+    width: 100%;
+    font-size: 1.75rem;
+    border: 0;
+    text-indent: 2%;
+    padding: 2% 0;
+    border-bottom: 7px solid #ccc;
+  }
+  .write input::placeholder {
+    text-indent: 2%;
+    font-size: 1.75rem;
+  }
+  .write textarea {
+    width: 100%;
+    resize: none;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 1.75rem;
+    font-family: 'malgungothic', '맑은고딕';
+  }
+  .write textarea::placeholder {
+    font-size: 1.75rem;
+    font-family: 'malgungothic', '맑은고딕';
+  }
+  

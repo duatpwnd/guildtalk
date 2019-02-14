@@ -1,0 +1,12 @@
+@font-face {
+    font-family:'malgun';
+    src: 
+    local('https://duatpwnd.herokuapp.com/yo/font/malgun.woff'),
+    url('https://duatpwnd.herokuapp.com/yo/font/malgun.woff')
+};
+@font-face {
+    font-family:'malgunbd';
+    src: 
+    local('https://duatpwnd.herokuapp.com/yo/font/malgunbd.woff'),
+    url('https://duatpwnd.herokuapp.com/yo/font/malgunbd.woff')
+};

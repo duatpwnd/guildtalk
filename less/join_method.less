@@ -1,0 +1,178 @@
+@bg: '../images';
+#wrap {
+    background: #e6e6e6;
+    section {
+        padding: 3% 0 60% 0;
+        .phone_join,
+        .email_join {
+            form {
+                fieldset {
+                    .com_input_box {
+                        border: 0;
+                        width: 100%;
+                        font-size: 1.75rem;
+                        padding: 2.996% 0;
+                        text-indent: 3%;
+                        &::placeholder {
+                            font-size: 1.75rem;
+                            color: black;
+                            text-indent: 3%;
+                        }
+                    }
+                    .cord_enter {
+                        div {
+                            background: white;
+                            position: relative;
+                        }
+                        .ph_txt1,
+                        .ph_txt2,
+                        .ph_txt3,
+                        .ph_txt4 {
+                            color: #e43737;
+                            margin-left: 3.5%;
+                            display: none;
+                        }
+                        .phone_receive,
+                        .email_receive {
+                            .cord_btn {
+                                border: 1px solid #bababa;
+                                background: white;
+                                width: 21.485%;
+                                height: 60.26%;
+                                font-size: 1.43rem;
+                                position: absolute;
+                                top: 0;
+                                right: 3%;
+                                bottom: 0;
+                                text-align: center;
+                                margin: auto;
+                            }
+                            #ph1 {
+                                -webkit-box-shadow: 0 0 0 50px #fff inset;
+                                -webkit-text-fill-color: #000;
+                            }
+                        }
+                        .cord_confirm {
+                            border-top: 1px solid #ccc;
+                            .confirm_btn {
+                                background: #e43737;
+                                border: 0;
+                                color: white;
+                                width: 21.485%;
+                                height: 60.26%;
+                                font-size: 1.43rem;
+                                position: absolute;
+                                top: 0;
+                                right: 3%;
+                                bottom: 0;
+                                text-align: center;
+                                margin: auto;
+                            }
+                            .limit_time {
+                                height: 40%;
+                                color: #e43737;
+                                font-size: 1.5rem;
+                                position: absolute;
+                                top: 0;
+                                right: 26%;
+                                bottom: 0;
+                                margin: auto;
+                            }
+                        }
+                    }
+                    .pw_enter {
+                        margin-top: 3%;
+                        div {
+                            background: white;
+                        }
+                        .pw_confirm2 {
+                            border-top: 1px solid #ccc;
+                        }
+                        .pw_txt1,
+                        .pw_txt2,
+                        .pw_txt3 {
+                            color: #e43737;
+                            margin-left: 3.5%;
+                            display: none;
+                        }
+                    }
+                    .agree_wrap {
+                        margin-top: 3%;
+                        div {
+                            position: relative;
+                            background: white;
+                            a {
+                                color: black;
+                                width: 21.485%;
+                                border: 1px solid #bababa;
+                                font-size: 1.43rem;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 3%;
+                                text-align: center;
+                                margin: auto;
+                                display: table;
+                                padding: 1% 0;
+                            }
+                            label {
+                                font-size: 1.75rem;
+                                margin-left: 9%;
+                                line-height: 279%;
+                            }
+                            span {
+                                background: url('@{bg}/btn_check_before.png');
+                                background-size: 100% 100%;
+                                display: inline-block;
+                                width: 4.818%;
+                                width: 4.818%;
+                                height: 49.32%;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 3%;
+                                margin: auto;
+                            }
+                            input:checked+label span {
+                                background: url('@{bg}/btn_check_after.png');
+                                background-size: 100% 100%;
+                                display: inline-block;
+                                width: 4.818%;
+                                height: 49.32%;
+                                position: absolute;
+                                top: 0;
+                                left: 3%;
+                                bottom: 0;
+                                margin: auto;
+                            }
+                        }
+                        input[type='checkbox'] {
+                            display: none;
+                        }
+                        .privacy {
+                            border-top: 1px solid #ccc;
+                        }
+                    }
+                    .help_txt {
+                        width: 94%;
+                        font-size: 1.562rem;
+                        color: #b4b4b4;
+                        margin: 2% auto 7% auto;
+                        display: block;
+                    }
+                    .join_btn {
+                        background: #e43737;
+                        border: 0;
+                        color: white;
+                        text-align: center;
+                        width: 94%;
+                        margin: 0 auto;
+                        padding: 3.386% 0;
+                        font-size: 2rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+.guild_info {
+    position: relative;
+    padding: 9.5% 0;
+    background: url('../images/bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .guild_info .guild_profile {
+    width: 11.72%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    bottom: 0;
+    margin: auto;
+  }
+  .guild_info .guild_info_wrap {
+    position: absolute;
+    top: 0;
+    left: 19%;
+    bottom: 0;
+    margin: auto;
+    height: 42%;
+  }
+  .guild_info .guild_info_wrap a {
+    color: white;
+    display: block;
+    font-size: 1.125rem;
+    line-height: 134%;
+  }
+  .guild_info .guild_info_wrap .guild_name {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+  .guild_interest1 div {
+    border-bottom: 1px solid #ccc;
+    padding: 5%;
+  }
+  .guild_interest1 dl {
+    display: inline-block;
+  }
+  .guild_interest1 dt {
+    line-height: 135%;
+    font-size: 1.25rem;
+  }
+  .guild_interest1 dd {
+    line-height: 134%;
+    font-size: 4rem;
+  }
+  .guild_interest1 dd a {
+    color: black;
+  }
+  .guild_interest1 .com_left1 {
+    margin-left: 25%;
+  }
+  .guild_interest1 .com_left2 {
+    margin-left: 31%;
+  }
+  .bg_ch {
+    background: #e6e6e6;
+  }
+  .bg_ch section {
+    padding-bottom: 69%;
+  }
+  .bg_ch section .join_member {
+    background: url('../images/joiner.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 3% 0 5.968% 0;
+  }
+  .bg_ch section .join_member .top_menu {
+    position: relative;
+  }
+  .bg_ch section .join_member .top_menu .back {
+    width: 2.995%;
+    height: 83%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    bottom: 0;
+    margin: auto;
+  }
+  .bg_ch section .join_member .top_menu .back img {
+    width: 100%;
+  }
+  .bg_ch section .join_member .top_menu .menu {
+    width: 5.99%;
+    height: 91.5%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+  }
+  .bg_ch section .join_member .top_menu .menu img {
+    width: 100%;
+  }
+  .bg_ch section .join_member .joiner_profile {
+    position: relative;
+    margin: 27% 0 0 5%;
+  }
+  .bg_ch section .join_member .joiner_profile .joiner_profile_thumb{
+    width: 19.6%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 91.8%;
+  }
+  .bg_ch section .join_member .joiner_profile img {
+    width: 100%;
+  }
+  .bg_ch section .join_member .joiner_info {
+      margin-left: 23%;
+      padding: 3% 0;
+  }
+  .bg_ch section .join_member .joiner_info a {
+    color: white;
+    display: block;
+    font-size: 1.125rem;
+  }
+  .bg_ch section .join_member .joiner_info a span {
+    border: 1px solid white;
+    text-align: center;
+    font-size: 1.15rem;
+    width: 8%;
+    padding: 1% 0 0.5% 0;
+    line-height: 135%;
+    display: inline-block;
+  }
+  .bg_ch section .join_member .joiner_info .joiner_name {
+    font-size: 1.5rem;
+  }
+  .bg_ch section .join_member .joiner_info .grade,
+  .bg_ch section .join_member .joiner_info .level {
+    margin-top: 1%;
+  }
+  .bg_ch section .join_date {
+    background: white;
+    padding: 2.3%;
+  }
+  .bg_ch section .join_date dt {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 134%;
+  }
+  .bg_ch section .join_date dd {
+    display: inline-block;
+    font-size: 1.5rem;
+    float: right;
+    line-height: 134%;
+  }
+  .bg_ch section .btn_wrap {
+    margin-top: 4%;
+    text-align: center;
+  }
+  .bg_ch section .btn_wrap a {
+    font-size: 1.75rem;
+    line-height: 284%;
+    color: white;
+    width: 44%;
+    display: inline-block;
+  }
+  .bg_ch section .btn_wrap .btn1 {
+    background: #505050;
+  }
+  .bg_ch section .btn_wrap .btn2 {
+    background: #e43737;
+  }
+  

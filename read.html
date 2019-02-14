@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>글읽기</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="css/read.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: black;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            // 글 등록하기 //
+            var flag = true;
+            var i = 1;
+            document.getElementsByClassName('enroll_btn')[0].onclick = function () {
+                var dt = new Date();
+                var year = dt.getFullYear();
+                var month = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var hours = dt.getHours();
+                var minutes = dt.getMinutes();
+                if (minutes < 10) {
+                    minutes = '0' + minutes;
+                }
+                var v = $('.txt_box').val();
+                if (flag) {
+                    flag = false;
+                    if (v == '') {
+                        alert('댓글의 내용이 비어있습니다.');
+                        flag = true;
+                        return false;
+                    }
+
+                    $('.w_1').append('<li class="data1 com' + i + '"><div class="info3"><a href="#" class="profile2"><img src="images/p.png" alt="프로필" title="프로필"></a> <a href="#">인중타격</a> <span class = "ymd">' + year + '.' + month + '.' + day + '</span> <span class = "time_info">' + hours + ':' + minutes + '</span><div class="writting' + (i + 1) + '"></div></div><div class="a_wrap"><a href="#" class="l_a res"><img src="images/n1.png" class="res_ico1">답글</a><a href="#" class="l_a l_a_center mo">수정</a><a href="#" class="l_a rev">삭제</a><a href="#" class="n_a0 r_a"><img src="images/no.png" class = "res_ico2"><span class="o_counting"></span></a><a href="#" class="r_a0"><img src="images/ok.png" class = "res_ico2"><span class="n_counting"></span></a></div><div class ="rbox"><div class ="en_wrap"><textarea class = "comment1" rows="5"></textarea><button class = "en_btn">등록</button><div></div></li>');
+                    i++;
+                    $('.writting' + i).css({
+                        'margin-left': '10%',
+                        'border': 0,
+                        'width': '89%',
+                        'font-size': '1.4rem',
+                        'font-family': "'malgungothic', '맑은고딕'"
+                    })
+                    $('.writting' + i).text(v);
+                    $('.txt_box').val('');
+                    var len = $('.w_1 li').length;
+                    $('.e_wrap span').text(len);
+                    //60초후에 등록가능합니다.//
+                    setTimeout(function () {
+                        flag = true;
+
+                    }, 60000);
+                } else {
+                    alert('60초후에 등록이 가능합니다.');
+                    $('.txt_box').val('');
+                    return;
+                }
+            }
+            // 답글달기 :: S //
+            var r = 1;
+            $(document).on('click', '.res', function () {
+                $(this).removeClass('res');
+                $(this).addClass('res1');
+                $(this).parent().next().css({ 'display': 'block' });
+                return false;
+            })
+            $(document).on('click', '.res1', function () {
+                $(this).removeClass('res1');
+                $(this).addClass('res');
+                $(this).parent().next().css({ 'display': 'none' });
+                return false;
+            })
+            $(document).on('click', '.en_btn', function () {
+                var dt = new Date();
+                var year = dt.getFullYear();
+                var month = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var hours = dt.getHours();
+                var minutes = dt.getMinutes();
+                if (minutes < 10) {
+                    minutes = '0' + minutes;
+                }
+                var v = $(this).prev().val();
+                $(this).parent().before('<div class="data1 res' + r + '" style="background: #f1f1f1"><div class="info3"><a href="#" class="profile2"><img src="images/p.png" alt="프로필" title="프로필"></a> <a href="#">인중타격</a> <span class = "ymd">' + year + '.' + month + '.' + day + '</span> <span class = "time_info">' + hours + ':' + minutes + '</span><div class ="reply1"><span>' + v + '</span></div></div><div class="a_wrap"><a href="#" class="l_a l_a_center mo">수정</a><a href="#" class="l_a rev">삭제</a><a href="#" class="n_a0 r_a"><img src="images/no.png" class="res_ico2"><span class="o_counting"></span></a><a href="#" class="r_a0"><img src="images/ok.png" class="res_ico2"><span class="n_counting"></span></a></div>');
+                $('.comment1').val('');
+                r++;
+                console.log(v);
+            })
+            // 답글달기 :: E //
+
+            // 삭제하기 //
+            $(document).on('click', '.rev', function () {
+                var que = confirm('삭제하시겠습니까?');
+                if (que) {
+                    $(this).parents().eq(1).remove();
+                    var len = $('.w_1 li').length;
+                    $('.e_wrap span').text(len);
+                    return false;
+                } else {
+                    return false;
+                }
+                return false;
+            })
+            // 수정하기 //
+            $(document).on('click', '.mo', function () {
+                var que = confirm('수정하시겠습니까?')
+                if (que) {
+                    $(this).parent().prev().find('textarea').removeAttr('readonly');
+                    $(this).parent().prev().find('textarea').focus();
+                    $(this).removeClass('mo');
+                    $(this).addClass('mo1');
+                    $(this).text('수정완료');
+                    $(document).on('click', '.mo1', function () {
+                        $(this).parent().prev().find('textarea').attr({ 'readonly': true });
+                        $(this).text('수정');
+                        $(this).removeClass('mo1');
+                        $(this).addClass('mo');
+                        return false;
+                    })
+                } else {
+                    return false;
+                }
+                return false;
+            })
+            // 좋아요 //
+            $(document).on('click', '.n_a0', function () {
+                alert('자신의 댓글에는 공감을 표시할 수 없습니다.');
+                return false;
+            })
+            // 싫어요 //
+            $(document).on('click', '.r_a0', function () {
+                alert('자신의 댓글에는 공감을 표시할 수 없습니다.');
+                return false;
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="loading">
+        <img id="loading-image" src="http://duatpwnd.herokuapp.com/yo/images/32.gif" alt="Loading" />
+    </div>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back" onclick="back();">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>핏빛기사단</h1>
+        </header>
+        <section>
+            <span>자유게시판</span>
+            <h2 class="theme">함께하실 가족 모셔요★</h2>
+            <div class="info1">
+                <a href="#" class="profile1">
+                    <img src="images/p.png" alt="프로필" title="프로필">
+                </a>
+                <div class="info2">
+                    <a href="#" class="id1">인중타격(duatpwnd)</a>
+                    <span>2018.09.20</span>
+                    <span class="time">18:36</span>
+                    <span class="bar">|</span>
+                    <span>조회999</span>
+                </div>
+            </div>
+        </section>
+        <section class="sec2">
+            <textarea class="write1" rows="15">1기 길드렙20(풀) 성장스킬(풀) 전투스킬(풀)길드성:성8(맥스) 여관5(맥스) 대장간8(맥스) 감시탑8(맥스) 시장6(맥스) 연구소6(맥스)1기 길드포인트 여유 7천만 있습니다2기 길드렙20(풀) 성장스킬(풀) 전투스킬(풀)길드성:성8(맥스) 여관5(맥스) 대장간8(맥스) 감시탑6(2남음) 시장6(맥스) 연구소(맥스)2기 길드포인트 여유 1천500만 있습니다ps:그만큼 길드 관리 잘되는곳입니다 함께하실 가족모셔요아프리카TV 방송중입니다  아프리카TV에서 BJ랭킹 검색해서 오시면 됩니다1기 길드렙20(풀) 성장스킬(풀) 전투스킬(풀)길드성:성8(맥스) 여관5(맥스) 대장간8(맥스) 감시탑8(맥스) 시장6(맥스) 연구소6(맥스)1기 길드포인트 여유 7천만 있습니다2기 길드렙20(풀) 성장스킬(풀) 전투스킬(풀)길드성:성8(맥스) 여관5(맥스) 대장간8(맥스) 감시탑6(2남음) 시장6(맥스) 연구소(맥스)2기 길드포인트 여유 1천500만 있습니다ps:그만큼 길드 관리 잘되는곳입니다 함께하실 가족모셔요아프리카TV 방송중입니다  아프리카TV에서 BJ랭킹 검색해서 오시면 됩니다1기 길드렙20(풀) 성장스킬(풀) 전투스킬(풀)길드성:성8(맥스) 여관5(맥스) 대장간8(맥스) 감시탑8(맥스) 시장6(맥스) 연구소6
+            </textarea>
+            <div class="okay_no">
+                <ul>
+                    <li onclick="ok();">
+                        <a href="#" class="ok_ico" onclick="return false;">좋아요</a>
+                        <span class="c1"></span>
+                    </li>
+                    <li class="l1" onclick="no();">
+                        <a href="#" class="no_ico" onclick="return false;">싫어요</a>
+                        <span class="c2"></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec3">
+            <ul class="writting">
+                <li>
+                    <a href="#" class="writting_ico">
+                        <img src="images/before.png" alt="이전글" title="이전글" class="before_ico">
+                        <span class="com_writting">이전글</span>
+                        <span class="theme_writting">함께하실 가족 모셔요★함께해요~함께해요~함께해요~함께해요~
+                        </span>
+                        <span class="comment_counting">(0)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="writting_ico">
+                        <img src="images/after.png" alt="이전글" title="이전글" class="before_ico">
+                        <span class="com_writting">이전글</span>
+                        <span class="theme_writting">함께하실 가족 모셔요★함께해요~함께해요~함께해요~함께해요~
+                        </span>
+                        <span class="comment_counting">(0)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="btn_wrap">
+                <li class="first">
+                    <a href="#">목록으로</a>
+                </li>
+                <li class="last">
+                    <a href="#">퍼가기</a>
+                </li>
+                <li>
+                    <a href="#">삭제</a>
+                </li>
+                <li>
+                    <a href="#">수정</a>
+                </li>
+                <li>
+                    <a href="#">신고</a>
+                </li>
+            </ul>
+        </section>
+        <section class="sec4">
+            <div class="e_wrap">
+                <h3>댓글
+                    <span></span>건</h3>
+                <div class="wrt_btn">
+                    <textarea class="txt_box" rows="1" placeholder="댓글을 남겨보세요."></textarea>
+                    <button type="button" class="enroll_btn">등록</button>
+                </div>
+            </div>
+            <ul class="w_1">
+
+            </ul>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        // 최상단 좋아요 싫어요 //
+        var like = 0;
+        var n = 0;
+        function ok() {
+            like++;
+            $('.c1').text(like);
+        }
+        function no() {
+            n++;
+            $('.c2').text(n);
+        }
+    </script>
+</body>
+
+</html>

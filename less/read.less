@@ -1,0 +1,332 @@
+@bg: '../images';
+section {
+    padding: 2% 6%;
+    border-bottom: 1px solid #ccc;
+    select {
+        border: 0;
+        font-size: 1.375rem;
+    }
+    .theme {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    .info1 {
+        position: relative;
+        margin-top: 4%;
+        .profile1 {
+            display: inline-block;
+            width: 8.88%;
+            img {
+                width: 100%;
+            }
+        }
+        .info2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 11%;
+            width: 94%;
+            height: 100%;
+            margin: auto;
+            .id1 {
+                font-size: 1.5rem;
+                color: black;
+                display: block;
+            }
+            span {
+                color: #969696;
+                font-size: 1.25rem;
+            }
+            .time {
+                margin-left: 1%;
+            }
+            .bar {
+                margin: 0 1%;
+            }
+        }
+    }
+}
+
+.sec2 {
+    padding-bottom: 5%;
+    .write1 {
+        border: 0;
+        resize: none;
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
+        font-family: 'malgungothic', '맑은고딕';
+    }
+    .okay_no {
+        margin-top: 15%;
+        ul {
+            width: 36%;
+            margin: 0 auto;
+            &:after {
+                display: block;
+                clear: both;
+                content: '';
+            }
+        }
+        li {
+            text-align: center;
+            float: left;
+            width: 48%;
+            padding: 19% 5% 19% 5%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            position: relative;
+            a {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 18%;
+                margin: auto;
+                overflow: hidden;
+                text-indent: 100%;
+                white-space: nowrap;
+                width: 31.37%;
+                height: 34.63%;
+            }
+            span {
+                display: block;
+                position: absolute;
+                bottom: 10%;
+                width: 79%;
+            }
+            .ok_ico {
+                background:url('@{bg}/okay_ico.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            .no_ico {
+                background:url('@{bg}/no_ico.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        }
+        .l1 {
+            margin-left: 4%;
+        }
+    }
+}
+
+.sec3 {
+    border-top: 1px solid #ccc;
+    padding-top: 0;
+    padding-bottom: 5%;
+    li {
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        padding: 2% 0;
+        a {
+            line-height: 136%;
+            color: black;
+            font-size: 1.5rem;
+        }
+        .writting_ico {
+            display: block;
+            .before_ico {
+                vertical-align: middle;
+                width: 3.108%;
+            }
+            .comment_counting {
+                color: red;
+                font-size: 1.5rem;
+                vertical-align: middle;
+            }
+        }
+        .com_writting {
+            margin: 0 2%;
+            vertical-align: middle;
+        }
+        .theme_writting {
+            width: 64%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .btn_wrap {
+        margin-top: 3%;
+        &:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+        li {
+            float: left;
+            border: 1px solid #ccc;
+            text-align: center;
+            width: 15%;
+            padding: 1% 0;
+            &:not(.first) {
+                float: right;
+                &:not(.last) {
+                    margin-right: 1%;
+                }
+            }
+            a {
+                color: black;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+.sec4 {
+    padding: 0 0 50% 0;
+    .e_wrap {
+        border-bottom: 1px solid #ccc;
+        padding: 3% 6%;
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            span {
+                color: red;
+            }
+        }
+        .wrt_btn {
+            border: 1px solid black;
+            margin-top: 2%;
+            &:after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+            .txt_box {
+                border: 0;
+                box-sizing: border-box;
+                resize: none;
+                width: 81%;
+                padding: 2.4% 0 3.071% 2%;
+                float: left;
+                font-size: 1.4rem;
+                font-family: 'malgungothic', '맑은고딕';
+            }
+            .enroll_btn {
+                float: right;
+                background: #e43737;
+                color: white;
+                border: 0;
+                width: 19%;
+                padding: 2.81% 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .w_1 {
+        .data1 {
+            position: relative;
+            padding: 3% 6% 3%;
+            border-bottom: 1px solid #ccc;
+            .profile2 {
+                width: 8.88%;
+                vertical-align: top;
+                display: inline-block;
+                img {
+                    vertical-align: middle;
+                    width: 100%;
+                }
+            }
+            .info3 {
+                a {
+                    font-size: 1.3rem;
+                    color: black;
+                }
+                span {
+                    font-size: 1.3rem;
+                    color: #969696;
+                }
+                .writting1 {
+                    resize: none;
+                    border: 0;
+                    width: 100%;
+                    font-size: 1.4rem;
+                    font-family: 'malgungothic', '맑은고딕';
+                }
+                .reply1 {
+                    width: 90%;
+                    margin-left: 10%;
+                    span {
+                        color: black;
+                    }
+                }
+            }
+            .a_wrap {
+                margin: 3% 0;
+                &:after {
+                    display: block;
+                    content: '';
+                    clear: both;
+                }
+                a {
+                    text-align: center;
+                    padding: 1.6% 0;
+                    font-size: 1.3rem;
+                    color: black;
+                    border: 1px solid #ccc;
+                    width: 15%;
+                    display: inline-block;
+                    .res_ico1 {
+                        width: 15.79%;
+                    }
+                    .res_ico2 {
+                        width: 19.73%;
+                    }
+                }
+                .l_a,
+                .l_a1 {
+                    float: left;
+                }
+                .r_a {
+                    margin-right: 0;
+                }
+                .n_a0,
+                .r_a0 {
+                    float: right;
+                    &:not(.r_a) {
+                        margin-right: 1%;
+                    }
+                }
+                .l_a_center {
+                    margin: 0 1%;
+                }
+            }
+            .rbox {
+                display: none;
+                .en_wrap {
+                    margin-top: 3%;
+                    border: 1px solid #ccc;
+                    &:after {
+                        display: block;
+                        content: '';
+                        clear: both;
+                    }
+                    .comment1 {
+                        float: left;
+                        width: 77%;
+                        resize: none;
+                        padding: 2%;
+                        border: 0;
+                        background: white;
+                        vertical-align: middle;
+                        font-size: 1.4rem;
+                        font-family: 'malgungothic, 맑은고딕';
+                    }
+                    .en_btn {
+                        float: right;
+                        background: #e43737;
+                        color: white;
+                        border: 0;
+                        width: 19%;
+                        padding: 10.534% 0;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

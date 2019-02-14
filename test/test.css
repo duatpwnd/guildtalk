@@ -1,0 +1,29 @@
+html body ul:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+html body ul li {
+  float: left;
+  list-style: none; }
+  html body ul li a {
+    text-decoration: none;
+    color: green; }
+
+html body .abox {
+  background-color: red; }
+  html body .abox:after {
+    content: '';
+    display: block;
+    clear: both; }
+  html body .abox p {
+    float: left; }
+
+body {
+  background: gold; }
+
+ul li a {
+  color: black; }
+
+h1 {
+  color: black; }

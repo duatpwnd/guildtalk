@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>게임 검색하기</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper_search.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        .swiper-pagination-bullet {
+            width: 33.3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back" onclick="back();">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>게임 검색하기</h1>
+        </header>
+        <div class="swiper-container">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Add Pagination -->
+                <div class="swiper-slide">
+                    <div class="search_menu">
+                        <input type="text" id="spc_search" class="nickname_enter" placeholder="검색어 입력" onkeyup="search();">
+                        <button type="submit" class="nickname_search">
+                    </div>
+                    <div class="member_list">
+                        <ul class="member_list_wrap">
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="game_register.html" class="guild_make_btn">미등록 게임 추가</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="search_menu">
+                        <input type="text" id="spc_search" class="nickname_enter" placeholder="검색어 입력" onkeyup="search2();">
+                        <button type="submit" class="nickname_search">
+                    </div>
+                    <div class="member_list">
+                        <ul class="member_list_wrap">
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="guild_make.html" class="guild_make_btn">길드 만들기</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="search_menu">
+                        <input type="text" id="spc_search" class="nickname_enter" placeholder="검색어 입력" onkeyup="search3();">
+                        <button type="submit" class="nickname_search">
+                    </div>
+                    <div class="member_list">
+                        <ul class="member_list_wrap">
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile_thumb ch_round">
+                                    <img src="images/gameprofile2.png" alt="기본프로필" title="기본프로필">
+                                </a>
+                                <a href="#" class="member_info">
+                                    <span class="user_id user1">문도
+                                    </span>
+                                    <span class="enroll_ico">
+                                        <img src="images/enroll_ico.png">
+                                    </span>
+                                    <span class="member member1">길드원
+                                        <span>9,856</span>명</span>
+                                    <span class="arrow_ico">
+                                        <img src="images/arrow.png" alt="화살표" title="화살표">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        // pagination 설정 //
+        var array = ['GAMES', 'GUILDS', 'USERS'];
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (array[index]) + '</span>';
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>

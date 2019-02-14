@@ -1,0 +1,116 @@
+@bg : '../images';
+#wrap {
+    background: #e6e6e6;
+    section {
+        padding-bottom: 47%;
+        .exile_member {
+            background: url('@{bg}/bg_exilemember.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 3% 0 6% 0;
+            .top_menu {
+                position: relative;
+            }
+            .back {
+                width: 2.995%;
+                height: 83%;
+                position: absolute;
+                top: 0;
+                left: 5%;
+                bottom: 0;
+                margin: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            .menu {
+                width: 5.99%;
+                height: 91.5%;
+                position: absolute;
+                top: 0;
+                right: 5%;
+                bottom: 0;
+                margin: auto;
+                img {
+                    width: 100%;
+                }
+            }
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: 2.2rem;
+                font-weight: 100;
+                line-height: 134%;
+            }
+            .exile_profile {
+                margin-top: 11%;
+                h2 {
+                    text-align: center;
+                    color: white;
+                    font-size: 1.76rem;
+                    font-weight: 100;
+                    margin-top: 2%;
+                }
+                .exile_thumb {
+                    background: url('@{bg}/profile.jpg');
+                    background-size: 100% 100%;
+                    width: 22%;
+                    padding: 11% 0;
+                    border-radius: 100PX;
+                    margin: 0 auto;
+                }
+                a {
+                    background: #e63939;
+                    color: white;
+                    width: 24.01%;
+                    line-height: 221%;
+                    display: block;
+                    text-align: center;
+                    font-size: 1.56rem;
+                    margin: 2% auto;
+                }
+            }
+        }
+        .exile_info {
+            li {
+                padding: 2.8% 4%;
+                border-bottom: 1px solid #ccc;
+                background: white;
+                span {
+                    font-size: 1.75rem;
+                    line-height: 122%;
+                }
+                .left_ele {
+                    float: left;
+                }
+                .right_ele {
+                    float: right;
+                }
+                &:after {
+                    display: block;
+                    content: '';
+                    clear: both;
+                }
+                select {
+                    font-size: 1.75rem;
+                    border: 0;
+                    direction: rtl;
+                    background: white;
+                }
+            }
+        }
+        .exile_release {
+            background: #e43737;
+            border: 0;
+            color: white;
+            text-align: center;
+            width: 94%;
+            margin: 0 auto;
+            margin-top: 7%;
+            padding: 3.386% 0;
+            font-size: 2rem;
+            display: block;
+        }
+    }
+}

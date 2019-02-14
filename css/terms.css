@@ -1,0 +1,88 @@
+.menu {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    margin: auto;
+    width: 5.99%;
+    height: 56.8%;
+  }
+  .menu img {
+    width: 100%;
+  }
+  section {
+    padding: 3%;
+    border-bottom: 1px solid #ccc;
+  }
+  section li {
+    line-height: 160%;
+  }
+  section .terms {
+    margin-bottom: 5%;
+  }
+  section .terms:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  section .terms a {
+    font-size: 1.5rem;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    width: 49%;
+    padding: 0.7% 0;
+    box-sizing: border-box;
+    line-height: 137%;
+  }
+  section .terms .t1 {
+    float: left;
+    border: 1px solid #e43737;
+    color: #e43737;
+    font-weight: 600;
+  }
+  section .terms .t2 {
+    float: right;
+  }
+  section .terms .t3 {
+    float: left;
+    color: black;
+    border: 1px solid black;
+    font-weight: 100;
+  }
+  section .terms .t4 {
+    float: right;
+    border: 1px solid #e43737;
+    color: #e43737;
+    font-weight: 600;
+  }
+  section .th {
+    font-size: 1.25rem;
+  }
+  section .s1 {
+    font-size: 1.06rem;
+    color: #282828;
+    line-height: 145%;
+  }
+  section .s2 {
+    margin-top: 3%;
+  }
+  section .s3 {
+    margin: 3% 0;
+  }
+  section .in1 > li {
+    margin-left: 3%;
+  }
+  section .in2 > li {
+    margin-left: 0;
+  }
+  section .in2 > li:not(:first-child) {
+    margin-top: 3%;
+  }
+  section .b2 > li {
+    margin-top: 3%;
+  }
+  .a26 {
+    padding-bottom: 17%;
+  }
+  

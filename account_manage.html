@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>계정관리</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="common/font.css" rel="stylesheet" type="text/css">
+    <link href="css/guild_closing.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="loading">
+        <img id="loading-image" src="images/32.gif" alt="Loading" />
+    </div>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back" onclick="back();">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>계정관리</h1>
+        </header>
+        <section class="guild">
+            <ul class="closing_box">
+                <li class="theme">
+                    <label>프로필</label>
+                </li>
+                <li>
+                    <a href="#">프로필 보기</a>
+                    <img src="images/arrow1.png" alt="프로필 보기" title="프로필 보기" class="arrow_ico">
+                </li>
+                <li class="theme">
+                    <label>개인정보</label>
+                </li>
+                <li>
+                    <a href="#">검색가능</a>
+                    <img src="images/btn_on.png" alt="on off" title="on off" class="onoff" onclick="onoff();">
+                </li>
+                <li>
+                    <a href="#">차단유저</a>
+                    <img src="images/arrow1.png" alt="차단유저" title="차단유저" class="arrow_ico">
+                </li>
+                <li class="theme">
+                    <label>지역설정</label>
+                </li>
+                <li>
+                    <select class="country_choice">
+                        <option>한국</option>
+                        <option>미국</option>
+                        <option>아프리카</option>
+                        <option>중국</option>
+                    </select>
+                    <img src="images/arrow1.png" alt="차단유저" title="차단유저" class="arrow_ico">
+                </li>
+                <li class="theme">
+                    <label>언어설정</label>
+                </li>
+                <li>
+                    <select class="country_choice">
+                        <option>한국어</option>
+                        <option>미국어</option>
+                        <option>아프리카어</option>
+                        <option>중국어</option>
+                    </select>
+                    <img src="images/arrow1.png" alt="차단유저" title="차단유저" class="arrow_ico">
+                </li>
+            </ul>
+            <div class="btn_wrap">
+                <a href="#" class="btn1">로그아웃</a>
+                <a href="#" class="btn2">길드톡 탈퇴</a>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>

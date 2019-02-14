@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>숨김친구 관리</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="css/mylist.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="main.html" class="back">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>
+                숨김친구 관리
+            </h1>
+        </header>
+        <div class="search_menu">
+            <input type="text" id="spc_search" class="nickname_enter" placeholder="이름,전화번호 검색" onkeyup="search1();cal(totalmember3);">
+            <button type="submit" class="nickname_search">
+        </div>
+        <div class="member_list member_list1">
+            <ul class="member_list_wrap">
+                <li class="member_counting">
+                    <a href="#" class="total_member">
+                        친구
+                        <span class="member_check"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my_profile.html" class="profile_ico">
+                        <img src="http://guildtalk.co.kr/uploads/cache/member_photo/2018/08/thumb-2b049799f6b5475f43a9980be126c702_80x80.jpg" alt="프로필이미지"
+                            title="프로필이미지">
+                    </a>
+                    <a href="#" class="member_info">
+                        <span class="user_name">인중타격(duatpwnd1234)</span>
+                        <span class="arrow_ico2 arrow_ico3">
+                            <img src="images/arrow.png" alt="화살표" title="화살표">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my_profile.html" class="profile_ico">
+                        <img src="http://guildtalk.co.kr/uploads/cache/member_photo/2018/08/thumb-2b049799f6b5475f43a9980be126c702_80x80.jpg" alt="프로필이미지"
+                            title="프로필이미지">
+                    </a>
+                    <a href="#" class="member_info">
+                        <span class="user_name">타격(sexweq)</span>
+                        <span class="arrow_ico2 arrow_ico3">
+                            <img src="images/arrow.png" alt="화살표" title="화살표">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my_profile.html" class="profile_ico">
+                        <img src="http://guildtalk.co.kr/uploads/cache/member_photo/2018/08/thumb-2b049799f6b5475f43a9980be126c702_80x80.jpg" alt="프로필이미지"
+                            title="프로필이미지">
+                    </a>
+                    <a href="#" class="member_info">
+                        <span class="user_name">바보(babo))</span>
+                        <span class="arrow_ico2 arrow_ico3">
+                            <img src="images/arrow.png" alt="화살표" title="화살표">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        // 나의 친구수 계산 :: S //
+        var totalmember3 = document.getElementsByClassName('member_check')[0];
+        var list = $('.member_list1 .member_list_wrap li').not('.member_counting').length;
+        totalmember3.innerHTML = list;
+        // 나의 친구수 계산 :: E //
+    </script>
+</body>
+
+</html>

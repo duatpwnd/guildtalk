@@ -1,0 +1,355 @@
+html body #wrap .pd_ch {
+  padding: 4.93% 0;
+}
+html body #wrap header:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+html body #wrap header .guildtalk_logo {
+  background: url('../images/guildtalk.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 27.605%;
+  height: 39.63%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  position: absolute;
+  top: 0;
+  left: 2.6%;
+  bottom: 0;
+  margin: auto;
+}
+html body #wrap header .menu {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  bottom: 0;
+  margin: auto;
+  width: 5.99%;
+  height: 56.8%;
+}
+html body #wrap header .menu img {
+  width: 100%;
+}
+html body #wrap footer {
+  max-width: 768px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+html body #wrap .search_menu {
+  box-sizing: border-box;
+  background: white;
+  position: relative;
+  border: 1px solid #e43737;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+html body #wrap .search_menu .nickname_enter {
+  border: 0;
+  width: 85%;
+  font-size: 1.56rem;
+  padding: 2.5% 0 2.5% 3%;
+}
+html body #wrap .search_menu .nickname_enter::placeholder {
+  font-size: 1.56rem;
+  color: black;
+}
+html body #wrap .search_menu .nickname_search {
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2.1%;
+  background: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 5.957%;
+  height: 64.53%;
+  padding: 0;
+  margin: auto;
+}
+html body #wrap .menu_ch {
+  float: left;
+  margin-top: 0;
+}
+html body #wrap .confirm {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 10%;
+  float: left;
+  line-height: 134%;
+  padding: 2.438% 0;
+}
+html body #wrap .member_list {
+  padding-bottom: 15%;
+}
+html body #wrap .member_list .strategy {
+  font-size: 1.875rem;
+  border-bottom: 2px solid black;
+  width: 94.6%;
+  margin: 0 auto;
+  padding: 2% 0;
+  font-weight: 100;
+}
+html body #wrap .member_list li {
+  border-bottom: 1px solid #ccc;
+  padding: 4%;
+  width: 89%;
+  margin: 0 auto;
+  position: relative;
+}
+html body #wrap .member_list li a {
+  display: block;
+  color: black;
+}
+html body #wrap .member_list li .profile_thumb {
+  width: 7.786%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 49.44%;
+  overflow: hidden;
+  border-radius: 20%;
+}
+.profile_thumb img{
+  height: 100%;
+}
+html body #wrap .member_list li .ch_thumb {
+  height: 49.375%;
+}
+html body #wrap .member_list li .member_info {
+  position: relative;
+  margin-left: 14%;
+  width: 88%;
+  display: inline-block;
+  vertical-align: middle;
+}
+html body #wrap .member_list li .member_info .guild_name {
+  font-size: 1.2rem;
+  line-height: 100%;
+  color: #e43737;
+}
+html body #wrap .member_list li .member_info .new {
+  width: 3.658%;
+}
+html body #wrap .member_list li .member_info .date {
+  margin-left: 1%;
+}
+html body #wrap .member_list li .member_info .time,
+html body #wrap .member_list li .member_info .date {
+  color: #969696;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  line-height: 100%;
+}
+html body #wrap .member_list li .member_info .chk_box:checked + label .chk1 {
+  background: url('../images/btn_check_after.png');
+  background-size: 100% 100%;
+  width: 6.015%;
+  height: 64.25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+html body #wrap .member_list li .member_info .user_id {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 137%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+html body #wrap .member_list li .member_info .user_id .chk1 {
+  display: inline-block;
+  background: url('../images/btn_check_before.png');
+  background-size: 100% 100%;
+  width: 6.015%;
+  height: 64.25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+html body #wrap .member_list li .member_info .user_ch {
+  padding: 2% 0;
+}
+html body #wrap .member_list li .arrow_ico2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1.952%;
+  height: 37.57%;
+}
+html body #wrap .member_list li .arrow_ico3 {
+  height: 65.63%;
+}
+html body #wrap .member_list li .arrow_ico4 {
+  height: 38.62%;
+}
+html body #wrap .member_list li img {
+  width: 100%;
+  vertical-align: middle;
+}
+html body #wrap .member_list li .profile_ico {
+  width: 10.74%;
+  border-radius: 50%;
+  height: 85.63%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
+html body #wrap .member_list li .profile_ico img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+html body #wrap .member_list li .user_name {
+  width: 57%;
+  vertical-align: middle;
+  display: block;
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+}
+html body #wrap .member_list li .conversation_name {
+  background: #ccc;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1%;
+  vertical-align: middle;
+  width: 60.396%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+html body #wrap .member_list li .comment {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 8.292%;
+  height: 93.14%;
+  text-align: center;
+  line-height: 85%;
+  font-size: 1.5rem;
+}
+html body #wrap .member_list li .comment img {
+  vertical-align: middle;
+  width: 100%;
+}
+html body #wrap .total_member,
+html body #wrap .bookmark {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 137%;
+  margin-left: -3%;
+}
+html body #wrap .total_member .member_check,
+html body #wrap .bookmark .member_check {
+  color: #e43737;
+}
+#wrap .menu_wrap {
+  position: absolute;
+  top: 0;
+  right: -51%;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: white;
+}
+
+#wrap .menu_wrap .top {
+  color: white;
+  background: #e43737;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#wrap .menu_wrap li {
+  position: relative;
+  padding: 5%;
+  border-bottom: 1px solid #ccc;
+}
+
+#wrap .menu_wrap li a {
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 1.5rem;
+}
+
+#wrap .menu_wrap .top .close {
+  position: absolute;
+  top: 0;
+  right: 7%;
+  bottom: 0;
+  margin: auto;
+  width: 9.896%;
+  height: 54%;
+}
+#wrap .friend_list {
+  padding-bottom: 20%;
+}
+#wrap .friend_list li {
+  border-bottom: 1px solid #ccc;
+  padding: 4%;
+  position: relative;
+}
+#wrap .friend_list li a {
+  display: block;
+}
+#wrap .friend_list li a .profile_ico {
+  width: 10.417%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  height: 78.77%;
+}
+#wrap .friend_list li .user_name {
+  width: 30.415%;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+  color: black;
+  font-size: 1.2rem;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 14%;
+}
+#wrap .friend_list li .conversation_name {
+  background: #ccc;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1%;
+  vertical-align: middle;
+  width: 50.396%;
+  display: inline-block;
+  overflow-x: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+  position: relative;
+}
+#wrap .friend_list li a .profile_ico img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}

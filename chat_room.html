@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>채팅방</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/font.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="css/chat_room.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e43737;
+        }
+
+        html body #wrap {
+            height: 100%;
+        }
+        html body #wrap header {
+            position: relative;
+            width: 100%;
+            padding: 2.93% 0;
+            z-index: 1;
+            background: #e43737;
+            max-width: 768px;
+        }
+        @media all and (max-width:768px) {
+            .profile_img {
+                height: 11vw;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('section').scrollTop($("section")[0].scrollHeight)
+            // live 버튼 클릭시 //
+            var flag = true;
+            $('.live_button').on('click', function () {
+                if (flag) {
+                    $('.live_button img').attr({ 'src': 'http://duatpwnd.herokuapp.com/yo/images/live2.png' });
+                    flag = false;
+                } else {
+                    $('.live_button img').attr({ 'src': 'http://duatpwnd.herokuapp.com/yo/images/live1.png' });
+                    flag = true;
+                }
+            })
+            $('.message_enter').keyup(function () {
+                var message = $('.message_enter').val();
+                var regexp = /^\S/;
+                var regexp1 = /^\s+\S/;
+                var test = regexp.test(message);
+                var test1 = regexp1.test(message);
+                if (test || test1) {
+                    $('.send_btn').css({ 'background': 'gold' })
+                } else {
+                    $('.send_btn').css({ 'background': '#ccc' })
+                }
+            })
+            var num = 0;
+            $('.send_btn').on('click', function () {
+             
+                num++;
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var message = $('.message_enter').val();
+                var regexp = /^\S/;
+                var regexp1 = /^\s+\S/;
+                var test = regexp.test(message);
+                var test1 = regexp1.test(message);
+
+                if (test || test1) {
+                    message.replace("\n", "<br/>");
+                    $('section').append('<div class = "m1"><div><a href = "#" class = "profile_img"><img src = "images/test.jpg"></a><span class = "name">염세중</span></div><p class=text_message>' + message + '</p><span class = "date' + num + '"></span></div>');
+                    $('.send_btn').css({ 'background': '#ccc' })
+                   
+                    
+                    // 시간 넣기 //
+                    if (minutes < 10) {
+                        minutes = '0' + minutes;
+                    }
+                    if (hours > 11) {
+                        $('.date' + num).text('PM' + hours + ':' + minutes);
+                    } else {
+                        $('.date' + num).text('AM' + hours + ':' + minutes);
+                    }
+
+                    $('.date' + num).css({
+                        'margin-left': '11.5%',
+                        'font-size': '0.8rem',
+                        'vertical-align': 'top',
+                        'display': 'block'
+                    })
+                    // 짝수번째 대화창 :: S //
+                    $('.m1:nth-child(even)').css({
+                        'text-align': 'right'
+                    })
+                    $('.m1:nth-child(even) .date' + num).css({
+                        'margin': 0
+                    })
+                    $('.m1:nth-child(even) .text_message').css({
+                        'background': '#f8cb35',
+                        'display': 'inline-block',
+                        'text-align': 'left',
+                        'padding': '1%'
+                    })
+                    $('.m1:nth-child(even) a, .m1:nth-child(even) .name').css({
+                        'display': 'none'
+                    })
+                    // 짝수번째 대화창 :: E //
+
+                    // 홀수번째 대화창 :: S //
+                    $('.m1:nth-child(odd) .text_message').css({
+                        'display': 'inline-block',
+                        'margin-left': '11.5%',
+                        'margin-top': '0.5%'
+                    })
+                    // 홀수번째 대화창 :: E //
+                    $('.message_enter').val('');
+                    $('section').scrollTop($("section")[0].scrollHeight);
+                } else {
+                    alert('내용을 입력하세요');
+                }
+                return false;
+            })
+
+            // 업로드 파일 정보 //
+            $('#upload').on('change', function () {
+                var files = this.files.item(0);
+                console.log(files);
+                var filename = this.files[0].name;
+                var filesize = this.files[0].size;
+                if (filesize >= 1024) {
+                    filesize = (this.files[0].size / 1024).toFixed(2) + 'KB'
+                }
+                else if (filesize >= 1048576) {
+                    filesize = (this.files[0].size / 1048576).toFixed(2) + 'MB'
+                } else if (filesize >= 1073741824) {
+                    filesize = (this.files[0].size / 1073741824).toFixed(2) + 'GB'
+                }
+                var objectURL = URL.createObjectURL(files);
+                $('.send_btn').css({ 'background-color': 'gold' });
+                $('.message_enter').val('<img src = "' + objectURL + '" >');
+            })
+            // 업로드 사진 삭제 //
+            $(document).on('click', '.upload_close', function () {
+                $(this).parent().remove();
+            })
+            // 최상단에 날짜 표시 //
+            $('.send_btn').one('click', function () {
+                var date = new Date();
+                var year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                var day = date.getDate();
+                $('.m1').prepend('<h1 class = record_date>' + year + '.' + month + '.' + day + '</h1>')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="loading">
+        <img id="loading-image" src="http://duatpwnd.herokuapp.com/yo/images/32.gif" alt="Loading" />
+    </div>
+    <div id="wrap">
+        <div class="menu_wrap">
+            <ul>
+                <li class="top">
+                    메뉴
+                    <img src="images/bigclose.png" alt="닫기" title="닫기" class="close" onclick="disappear();">
+                </li>
+                <li>
+                    <a href="invite.html"><span>대화상대초대</span>
+                        <span class="arrow">></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friend_main.html"><span>나가기</span>
+                        <span class="arrow">></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <header>
+            <a href="#" class="back" onclick="back();">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>그룹채팅방
+            </h1>
+            <a href="#" class="live_button">
+                <img src="http://duatpwnd.herokuapp.com/yo/images/live1.png" alt="livebutton" title="livebutton">
+            </a>
+            <a href="#" class="menu" onclick="menu();">
+                <img src="images/menu.png" alt="메뉴" title="메뉴">
+            </a>
+        </header>
+        <section>
+               
+        </section>
+        <div class="message_wrap">
+            <div class="message_send">
+                <input type='file' id='upload' accept="image" multiple>
+                <label for="upload">
+                    <img src="images/ico-clip.png" class="upload_btn">
+                </label>
+                <textarea class="message_enter" placeholder="메세지를 입력해 주세요" autofocus rows="1"></textarea>
+                <input type="button" class="send_btn" value="전송">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

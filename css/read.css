@@ -1,0 +1,420 @@
+section {
+    padding: 2% 6%;
+    border-bottom: 1px solid #ccc;
+}
+
+section select {
+    border: 0;
+    font-size: 1.375rem;
+}
+
+section .theme {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+section .info1 {
+    position: relative;
+    margin-top: 4%;
+}
+
+section .info1 .profile1 {
+    width: 8.88%;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 69.75%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section .info1 .profile1 img {
+    width: 100%;
+}
+
+section .info1 .info2 {
+    width: 90%;
+    margin-left: 11%;
+    padding: 2% 0;
+}
+
+section .info1 .info2 .id1 {
+    font-size: 1.5rem;
+    color: black;
+    display: block;
+}
+
+section .info1 .info2 span {
+    color: #969696;
+    font-size: 1.25rem;
+}
+
+section .info1 .info2 .bar {
+    margin: 0 1%;
+}
+
+.sec2 {
+    padding-bottom: 5%;
+}
+
+.sec2 .write1 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: 'malgungothic', '맑은고딕';
+    word-break: break-all;
+}
+
+.sec2 .okay_no {
+    margin-top: 15%;
+}
+
+.sec2 .okay_no ul {
+    width: 36%;
+    margin: 0 auto;
+}
+
+.sec2 .okay_no ul:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.sec2 .okay_no li {
+    text-align: center;
+    float: left;
+    width: 48%;
+    padding: 19% 5% 19% 5%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sec2 .okay_no li a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18%;
+    margin: auto;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 31.37%;
+    height: 34.63%;
+}
+
+.sec2 .okay_no li span {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    width: 79%;
+}
+
+.sec2 .okay_no li .ok_ico {
+    background: url('../images/okay_ico.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sec2 .okay_no li .no_ico {
+    background: url('../images/no_ico.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sec2 .okay_no .l1 {
+    margin-left: 4%;
+}
+
+.sec3 {
+    border-top: 1px solid #ccc;
+    padding-top: 0;
+    padding-bottom: 5%;
+}
+
+.sec3 li {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 2% 0;
+}
+
+.sec3 li a {
+    line-height: 136%;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.sec3 li .writting_ico {
+    display: block;
+}
+
+.sec3 li .writting_ico .before_ico {
+    vertical-align: middle;
+    width: 3.108%;
+}
+
+.sec3 li .writting_ico .comment_counting {
+    color: red;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.sec3 li .com_writting {
+    margin: 0 2%;
+    vertical-align: middle;
+}
+
+.sec3 li .theme_writting {
+    width: 64%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sec3 .btn_wrap {
+    margin-top: 3%;
+}
+
+.sec3 .btn_wrap:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.sec3 .btn_wrap li {
+    float: left;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 15%;
+    padding: 1% 0;
+}
+
+.sec3 .btn_wrap li:not(.first) {
+    float: right;
+}
+
+.sec3 .btn_wrap li:not(.first):not(.last) {
+    margin-right: 1%;
+}
+
+.sec3 .btn_wrap li a {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.sec4 {
+    padding: 0 0 50% 0;
+}
+
+.sec4 .e_wrap {
+    border-bottom: 1px solid #ccc;
+    padding: 3% 6%;
+}
+
+.sec4 .e_wrap h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.sec4 .e_wrap h3 span {
+    color: red;
+}
+
+.sec4 .e_wrap .wrt_btn {
+    border: 1px solid black;
+    margin-top: 2%;
+}
+
+.sec4 .e_wrap .wrt_btn:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.sec4 .e_wrap .wrt_btn .txt_box {
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+    width: 81%;
+    padding: 2.4% 0 3.071% 2%;
+    float: left;
+    font-size: 1.4rem;
+    font-family: 'malgungothic', '맑은고딕';
+}
+
+.sec4 .e_wrap .wrt_btn .enroll_btn {
+    float: right;
+    background: #e43737;
+    color: white;
+    border: 0;
+    width: 19%;
+    padding: 2.81% 0;
+    font-size: 1.4rem;
+}
+
+.sec4 .w_1 .data1 {
+    position: relative;
+    padding: 3% 6% 3%;
+    border-bottom: 1px solid #ccc;
+}
+
+.sec4 .w_1 .data1 .profile2 {
+    width: 8.88%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sec4 .w_1 .data1 .profile2 img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.sec4 .w_1 .data1 .info3 a {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.sec4 .w_1 .data1 .info3 span {
+    font-size: 1.3rem;
+    color: #969696;
+}
+
+.sec4 .w_1 .data1 .info3 .writting1 {
+    width: 80%;
+    font-size: 1.4rem;
+    font-family: 'malgungothic', '맑은고딕';
+    margin: 0 auto;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.sec4 .w_1 .data1 .info3 .reply1 {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.sec4 .w_1 .data1 .info3 .reply1 span {
+    color: black;
+}
+
+.sec4 .w_1 .data1 .a_wrap {
+    margin: 3% 0;
+}
+
+.sec4 .w_1 .data1 .a_wrap:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.sec4 .w_1 .data1 .a_wrap input,
+.sec4 .w_1 .data1 .a_wrap a:not(.res) {
+    text-align: center;
+    padding: 1.6% 0;
+    font-size: 1.3rem;
+    color: black;
+    border: 1px solid #ccc;
+    width: 15%;
+    display: inline-block;
+}
+
+.sec4 .w_1 .data1 .a_wrap .res {
+    text-align: center;
+    padding: 1.6% 2.5%;
+    font-size: 1.3rem;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.sec4 .w_1 .data1 .a_wrap a .res_ico1 {
+    width: 2.368%;
+}
+
+.sec4 .w_1 .data1 .a_wrap a .res_ico2 {
+    width: 19.73%;
+}
+
+.sec4 .w_1 .data1 .a_wrap .r_a {
+    margin-right: 0;
+}
+
+.sec4 .w_1 .data1 .a_wrap .n_a0,
+.sec4 .w_1 .data1 .a_wrap .r_a0 {
+    float: right;
+}
+
+.sec4 .w_1 .data1 .a_wrap .n_a0:not(.r_a),
+.sec4 .w_1 .data1 .a_wrap .r_a0:not(.r_a) {
+    margin-right: 1%;
+}
+
+.sec4 .w_1 .data1 .a_wrap .l_a_center {
+    margin: 0 1%;
+}
+
+.sec4 .w_1 .data1 .reply_list,
+.sec4 .w_1 .data1 .mbox {
+    display: none;
+}
+
+.sec4 .w_1 .data1  .en_wrap,
+.sec4 .w_1 .data1 .mbox .en_wrap {
+    margin-top: 4%;
+    position: relative;
+    display: none;
+}
+
+.sec4 .w_1 .data1  .en_wrap:after,
+.sec4 .w_1 .data1 .mbox .en_wrap:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.sec4 .w_1 .data1 .en_wrap .comment1,
+.sec4 .w_1 .data1 .mbox .en_wrap .comment1 {
+    width: 81%;
+    resize: none;
+    padding: 2%;
+    background: white;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    font-family: 'malgungothic, 맑은고딕';
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.sec4 .w_1 .data1 .en_wrap .en_btn,
+.sec4 .w_1 .data1 .mbox .en_wrap .en_btn {
+    background: #e43737;
+    color: white;
+    width: 19%;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    border: 1px solid #e43737;
+    height: 100%;
+    position: absolute;
+}
+
+.read_more_comments {
+    color: black;
+    float: right;
+    margin-top: 2%;
+    display: none;
+}
+.option_list li{
+    list-style: none;
+    float: left;
+    margin:2% 0 0 6%;
+    font-size: 1.3rem;
+}
+.option_list li a{
+    color: black;
+}
+.option_list:after{
+    display: block;
+    content:'';
+    clear: both;
+}

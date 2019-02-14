@@ -1,0 +1,21 @@
+#wrap {
+  background: #e6e6e6;
+}
+#wrap section {
+  width: 100%;
+  padding: 1% 0 100% 0;
+}
+#wrap section .gnb {
+  padding-bottom: 0.426%;
+}
+#wrap section .gnb li {
+  margin-top: 1.5%;
+  text-align: center;
+}
+#wrap section .gnb li a {
+  width: 92.71%;
+  display: inline-block;
+}
+#wrap section .gnb li a img {
+  width: 100%;
+}

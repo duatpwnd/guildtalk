@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>게임 등록하기</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="common/font.css" rel="stylesheet" type="text/css">
+    <link href="css/guild_closing.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        input[type='file'] {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>게임 등록하기</h1>
+        </header>
+        <section class="guild">
+            <ul class="closing_box">
+                <li class="theme">
+                    <label>플랫폼</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mobile" checked>
+                    <label for="mobile">모바일
+                        <span class="chk1"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pc">
+                    <label for="pc">PC
+                        <span class="chk1"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="console">
+                    <label for="console">콘솔
+                        <span class="chk1"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="web">
+                    <label for="web">웹
+                        <span class="chk1"></span>
+                    </label>
+                </li>
+                <li class="theme">
+                    <label for="gamename">게임명</label>
+                </li>
+                <li>
+                    <input type="text" id="gamename" class="gamerg" placeholder="Set game name">
+                </li>
+                <li class="theme">
+                    <label for="gamename">게임아이콘</label>
+                </li>
+                <li>
+                    <input type="file" id="change1">
+                    <label for="change1" class="img_ch">
+                        <span id="changeView1">
+                            <img src="images/gameprofile.png" alt="프로필이미지" title="프로필이미지">
+                        </span>
+                        <span class="ch_txt">아이콘변경</span>
+                    </label>
+                </li>
+                <li class="theme">
+                    <label for="gamename">게임커버이미지</label>
+                </li>
+                <li>
+                    <input type="file" id="change2">
+                    <label for="change2" class="img_ch">
+                        <span id="changeView2">
+                            <img src="images/gameprofile.png" alt="커버이미지" title="커버이미지">
+                        </span>
+                        <span class="ch_txt">커버이미지변경</span>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit" class="closing_btn">등록 신청하기</button>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

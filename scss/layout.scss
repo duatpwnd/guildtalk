@@ -1,0 +1,32 @@
+@mixin floatcommon {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+html {
+    body {
+        ul {
+            &:after {
+                @include floatcommon;
+            }
+            li {
+                float: left;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: green;
+                }
+            }
+        }
+        .abox {
+            background-color: red;
+            &:after {
+                @include floatcommon;
+            }
+            p {
+                float: left;
+            }
+        }
+    }
+}

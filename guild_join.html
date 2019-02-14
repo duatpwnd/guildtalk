@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>길드 가입하기</title>
+    <link href="https://duatpwnd.herokuapp.com/yo/common/reset.css" rel="stylesheet" type="text/css">
+    <link href="https://duatpwnd.herokuapp.com/yo/common/common.css" rel="stylesheet" type="text/css">
+    <link href="https://duatpwnd.herokuapp.com/yo/common/font.css" rel="stylesheet" type="text/css">
+    <link href="https://duatpwnd.herokuapp.com/yo/css/guild_closing.css" rel="stylesheet" type="text/css">
+    <link href="https://duatpwnd.herokuapp.com/yo/common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="https://duatpwnd.herokuapp.com/yo/js/jquery-3.2.1.min.js"></script>
+    <script src="https://duatpwnd.herokuapp.com/yo/js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back">
+                <img src="https://duatpwnd.herokuapp.com/yo/images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>길드 가입하기</h1>
+        </header>
+        <section class="guild">
+            <div class="guild_info">
+                <img src="https://duatpwnd.herokuapp.com/yo/images/guild_profile.png" alt="길드프로필" title="길드프로필" class="guild_profile">
+                <div class="guild0">
+                    <a href="#" class="guild1">드래곤슬래이어</a>
+                    <a href="#" class="guild2">맴버
+                        <span>1,595,986</span>명</a>
+                </div>
+            </div>
+            <div class="guild_name">
+                <input type="text" placeholder="닉네임" class="nick" onkeyup="nick();">
+                <!-- 사용가능한 닉네임 문구 -->
+                <p class="txt1">사용가능한 닉네임 입니다</p>
+                <!-- 사용가능한 불가능 문구 -->
+                <p class="txt2">사용불가능한 닉네임 입니다</p>
+                <p class="txt3">최대 한글 10자, 영문20자, 숫자혼용가능</p>
+            </div>
+            <div class="guild_join">
+                <p class="n_text">
+                    원활한 운영을 위해 매니저와 스탭에게 아이디, 연령, 설병, 이름, 별명, 활동내역이 이용기간 동안 공개됩니다.
+                </p>
+                <button type="submit" class="closing_btn">동의 후 가입하기</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                    <li>
+                            <a href="http://duatpwnd.herokuapp.com/yo/friend_main.html" class="friend_btn">
+                                <img src="https://duatpwnd.herokuapp.com/yo/images/friend.png" alt="친구" title="친구">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://duatpwnd.herokuapp.com/yo/talk_view.html" class="talk_btn">
+                                <img src="https://duatpwnd.herokuapp.com/yo/images/talk.png" alt="채팅" title="채팅">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://duatpwnd.herokuapp.com/yo/main.html" class="guild_btn">
+                                <img src="https://duatpwnd.herokuapp.com/yo/images/guild.png" alt="길드" title="길드">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://duatpwnd.herokuapp.com/yo/main1.html" class="game_btn">
+                                <img src="https://duatpwnd.herokuapp.com/yo/images/game.png" alt="게임" title="게임">
+                            </a>
+                        </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

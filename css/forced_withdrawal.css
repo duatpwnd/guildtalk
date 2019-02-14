@@ -1,0 +1,126 @@
+#wrap {
+  background: #e6e6e6;
+}
+#wrap section {
+  padding-bottom: 34.4%;
+}
+#wrap section .forced_withdrawal_member dl dt {
+  border-bottom: 1px solid #ccc;
+  background: #e6e6e6;
+  font-size: 1.75rem;
+  padding: 2.344% 0 2.344% 5%;
+}
+#wrap section .forced_withdrawal_member dl dd {
+  background: white;
+  border-bottom: 1px solid #ccc;
+  padding: 2.344% 0 2.344% 5%;
+}
+#wrap section .forced_withdrawal_member dl dd a {
+  font-size: 1.75rem;
+  color: black;
+}
+#wrap section .forced_withdrawal_member .forbidden_check {
+  background: #e6e6e6;
+  padding: 0 0 0 12%;
+  position: relative;
+}
+#wrap section .forced_withdrawal_member .forbidden_check label {
+  line-height: 268%;
+  font-size: 1.75rem;
+}
+#wrap section .forced_withdrawal_member .forbidden_check label span {
+  background: url('../images/btn_check_before.png');
+  background-size: 100% 100%;
+  width: 4.818%;
+  height: 49.32%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5.5%;
+  margin: auto;
+}
+#wrap section .forced_withdrawal_member .forbidden_check input:checked + label span {
+  background: url('../images/btn_check_after.png');
+  background-size: 100% 100%;
+  width: 4.818%;
+  height: 49.32%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5.5%;
+  margin: auto;
+}
+#wrap section .withdrawal_reason dl dt {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #e6e6e6;
+  font-size: 1.75rem;
+  padding: 2.344% 0 2.344% 5%;
+}
+#wrap section .withdrawal_reason dl dd {
+  background: white;
+  border-bottom: 1px solid #ccc;
+  padding-left: 12%;
+  position: relative;
+}
+#wrap section .withdrawal_reason dl dd label {
+  line-height: 268%;
+  font-size: 1.75rem;
+}
+#wrap section .withdrawal_reason dl dd span {
+  background: url('../images/btn_check_before.png');
+  background-size: 100% 100%;
+  width: 4.818%;
+  height: 49.32%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5.5%;
+  margin: auto;
+}
+#wrap section .withdrawal_reason dl dd input:checked + label span {
+  background: url('../images/btn_check_after.png');
+  background-size: 100% 100%;
+  width: 4.818%;
+  height: 49.32%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5.5%;
+  margin: auto;
+}
+#wrap section .withdrawal_reason dl .reason_enter {
+  padding-left: 5%;
+}
+#wrap section .withdrawal_reason dl .reason_enter .limit_text {
+  border: none;
+  resize: none;
+  width: 99%;
+  display: table;
+  font-family: 'malgungothic', " 맑은고딕";
+  font-size: 1.75rem;
+  line-height: 258%;
+}
+#wrap section .withdrawal_reason dl .reason_enter .limit_text::placeholder {
+  font-family: 'malgungothic', " 맑은고딕";
+  font-size: 1.75rem;
+  color: black;
+}
+#wrap section .withdrawal_txt {
+  width: 94%;
+  font-size: 1.562rem;
+  color: #b4b4b4;
+  margin: 2% auto 7% auto;
+  display: block;
+}
+#wrap section .withdrawal_btn {
+  background: #e43737;
+  border: 0;
+  color: white;
+  text-align: center;
+  width: 94%;
+  margin: 0 auto;
+  padding: 3.386% 0;
+  font-size: 2rem;
+  display: block;
+}

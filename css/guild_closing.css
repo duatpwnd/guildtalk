@@ -1,0 +1,544 @@
+#wrap {
+    background: #e6e6e6;
+}
+
+#wrap section {
+    padding-top: 3%;
+    padding-bottom: 34%;
+}
+
+#wrap section .notice_txt {
+    color: red;
+    margin-top: 2%;
+    line-height: 150%;
+}
+
+#wrap section .search_w {
+    display: block;
+    border: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 0;
+    color: black;
+    text-indent: 2%;
+    font-size: 1.5rem;
+}
+
+#wrap section .search_w::placeholder {
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+#wrap section .closing_box li {
+    background: white;
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 3% 5%;
+    position: relative;
+}
+
+#wrap section .closing_box li a {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    line-height: 137%;
+}
+#wrap section .closing_box li a span{
+    padding: 4% 0;
+    display: inline-block;
+}
+#wrap section .closing_box li .game_img {
+    width: 8.416%;
+    vertical-align: middle;
+}
+
+#wrap section .closing_box li .ch_txt {
+    margin-left: 11%;
+}
+
+#wrap section .closing_box li .arrow_ico {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 6%;
+    width: 1.567%;
+}
+
+#wrap section .closing_box li .arrow_ico img {
+    width: 100%;
+}
+
+#wrap section .closing_box li .del {
+    cursor: pointer;
+    width: 2.612%;
+}
+
+#wrap section .closing_box li label {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 137%;
+}
+
+#wrap section .closing_box li label .expression {
+    color: #ccc;
+    margin-left: 2%;
+    font-size: 1.2rem;
+}
+
+#wrap section .closing_box li label .expression1 {
+    color: #ccc;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 19%;
+    margin: auto;
+    line-height: 120%;
+    height: 65%;
+}
+
+#wrap section .closing_box li label .chk1 {
+    display: inline-block;
+    background: url('../images/btn_check_before.png');
+    background-size: 100% 100%;
+    width: 4.832%;
+    height: 47.4%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5.5%;
+    margin: auto;
+}
+
+#wrap section .closing_box li .confirm_btn {
+    background: #e43737;
+    border: 0;
+    color: white;
+    width: 24%;
+    height: 60.26%;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+}
+
+#wrap section .closing_box li .phone_receive,
+.cord_confirm {
+    background: white;
+    position: relative;
+}
+
+#wrap section .closing_box li .com_input_box {
+    border: 0;
+    width: 100%;
+    font-size: 1.75rem;
+    padding: 2.996% 0;
+    text-indent: 3%;
+    border-bottom: 1px solid #ccc;
+}
+
+#wrap section .closing_box li .com_input_box::placeholder {
+    color: black;
+}
+
+#wrap section .closing_box li .limit_time {
+  height: 40%;
+  color: #e43737;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 30%;
+  bottom: 0;
+  margin: auto;
+}
+#wrap section .closing_box li .ph_txt1,
+.ph_txt2,
+.ph_txt3,
+.ph_txt4 {
+    color: #e43737;
+    margin-left: 3.5%;
+    display: none;
+}
+
+#wrap section .closing_box li .cord_btn {
+    border: 1px solid #bababa;
+    background: white;
+    width: 24%;
+    height: 60.26%;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+}
+
+#wrap section .closing_box li label .circle_chk {
+    display: inline-block;
+    background: url('../images/bf.png');
+    background-size: 100% 100%;
+    width: 4.962%;
+    height: 58.72%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5.5%;
+    margin: auto;
+}
+
+#wrap section .closing_box li input:checked+label .chk1 {
+    background: url('../images/btn_check_after.png');
+    background-size: 100% 100%;
+    width: 4.832%;
+    height: 47.4%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5.5%;
+    margin: auto;
+}
+
+#wrap section .closing_box li input:checked+label .circle_chk {
+    background: url('../images/af.png');
+    background-size: 100% 100%;
+    width: 4.962%;
+    height: 58.72%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5.5%;
+    margin: auto;
+}
+
+#wrap section .closing_box li .gamerg {
+    border: 0;
+    font-size: 1.5rem;
+    line-height: 129%;
+    width: 100%;
+}
+
+#wrap section .closing_box li .select_g1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 40%;
+    padding: 3.5% 0px;
+    left: 15%;
+    width: 85%;
+}
+
+#wrap section .closing_box li .intro {
+    width: 100%;
+    font-size: 1.5rem;
+    border: 0;
+    resize: none;
+    font-family: 'malgungothic', '맑은고딕';
+}
+
+#wrap section .closing_box li .onoff {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 5%;
+    width: 10.314%;
+}
+
+#wrap section .closing_box li .country_choice {
+    border: 0;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#wrap section .closing_box li #changeView1,
+#changeView2 {
+    width: 7.573%;
+    border-radius: 17%;
+    height: 74.3%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+#changeView1 img, #changeView2 img{
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+#wrap section .closing_box li .img_ch {
+    display: block;
+    margin-left: 0;
+    vertical-align: middle;
+}
+#wrap section .closing_box li .thumb_img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#wrap section .closing_box .theme {
+    background: #e6e6e6;
+}
+
+#wrap section .closing_box .ex {
+    border-top: 1px solid #ccc;   
+}
+#wrap section .closing_box .list_theme{
+    background: #e43737;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+#wrap section .btn_wrap {
+    margin-top: 4%;
+    text-align: center;
+}
+
+#wrap section .btn_wrap a {
+    font-size: 1.75rem;
+    line-height: 284%;
+    color: white;
+    width: 44%;
+    display: inline-block;
+}
+
+#wrap section .btn_wrap .btn1 {
+    background: #505050;
+}
+
+#wrap section .btn_wrap .btn2 {
+    background: #e43737;
+}
+
+#wrap section .reason {
+    border: 1px solid #ccc;
+    resize: none;
+    width: 83.742%;
+    padding: 3%;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.375rem;
+    font-family: 'malgungothic', '맑은고딕';
+}
+
+#wrap section .reason::placeholder {
+    color: #b4b4b4;
+    font-size: 1.375rem;
+    font-family: 'malgungothic', '맑은고딕';
+}
+
+#wrap section .deco {
+    padding: 20% 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #d5d5d5, #626262);
+}
+
+#wrap section .deco a {
+    font-size: 1.5rem;
+    color: black;
+    display: block;
+}
+
+#wrap section .deco a img {
+    vertical-align: middle;
+    width: 2.474%;
+}
+
+#wrap section .byte_wrap {
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#wrap section .byte_wrap .byte_count {
+    color: #e43737;
+}
+
+#wrap section .limit_text {
+    border: 0;
+    padding: 0;
+    resize: none;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: 'malgungothic', '맑은고딕';
+}
+
+#wrap section .closing_btn {
+    background: #e43737;
+    border: 0;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 3.386% 0;
+    font-size: 2rem;
+    display: block;
+}
+
+#wrap section .n_text {
+    width: 90%;
+    margin: 2% auto;
+    color: #b4b4b4;
+    background: transparent;
+    font-size: 1.375rem;
+    line-height: 132%;
+}
+
+#wrap section .n_text li {
+    margin: 0 auto;
+    margin-top: 2%;
+    color: #b4b4b4;
+    background: transparent;
+    font-size: 1.375rem;
+    line-height: 132%;
+}
+
+#wrap section .guild_info {
+    position: relative;
+    background: url('../images/bg.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#wrap section .guild_info .guild0 {
+    padding: 7% 0;
+    margin-left: 19%;
+}
+
+#wrap section .guild_info .guild0 a {
+    display: block;
+    color: white;
+}
+
+#wrap section .guild_info .guild0 .guild1 {
+    line-height: 134%;
+    font-size: 1.5rem;
+}
+
+#wrap section .guild_info .guild0 .guild2 {
+    margin-top: 0.6%;
+    line-height: 137%;
+    font-size: 1.2rem;
+}
+
+#wrap section .guild_info .guild_profile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    margin: auto;
+    width: 11.72%;
+}
+
+#wrap section .guild_name {
+    padding: 5%;
+    background: white;
+}
+
+#wrap section .guild_name input {
+    width: 100%;
+    padding: 2% 0;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #c93d3d;
+    font-size: 1.5rem;
+    text-indent: 2.5%;
+}
+
+#wrap section .guild_name input::placeholder {
+    color: black;
+    font-size: 1.5rem;
+    text-indent: 2.5%;
+}
+
+#wrap section .guild_name .txt1 {
+    display: none;
+    font-size: 1.25rem;
+    color: #009edb;
+    margin-top: 2%;
+}
+
+#wrap section .guild_name .txt2 {
+    display: none;
+    font-size: 1.25rem;
+    margin-top: 2%;
+    color: #c93d3d;
+}
+
+#wrap section .guild_name .txt3 {
+    font-size: 1.25rem;
+    color: #b4b4b4;
+    margin-top: 2%;
+}
+
+#wrap section .guild_name_txt {
+    color: #e43737;
+    line-height: 200%;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+#wrap section dl {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 0 2% 0;
+    border-bottom: 1px solid #e43737;
+    font-size: 1.5rem;
+}
+
+#wrap section dl:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+#wrap section dl .last_day {
+    float: left;
+}
+
+#wrap section dl .last_date {
+    float: right;
+}
+
+#wrap .guild {
+    padding: 0 0 64% 0;
+}
+#wrap section .closing_txt1 p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+#wrap section .closing_par{
+    padding: 3% 0;
+    border-bottom: 1px solid #ccc;
+}
+#wrap section .closing_par .closing_dt{
+    width: 33%;
+    display: inline-block;
+}
+#wrap section .closing_txt2{
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+#wrap section .closing_txt2 p{
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+
+#wrap section .closing_txt1{
+    padding: 3% 0;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,139 @@
+@bg: '../images';
+#wrap {
+    overflow-x: hidden;
+    .menu_wrap {
+        position: absolute;
+        top: 0;
+        right: -51%;
+        width: 50%;
+        height: 100%;
+        z-index: 2;
+        background: white;
+        li {
+            position: relative;
+            padding: 5%;
+            border-bottom: 1px solid #ccc;
+            a {
+                position: relative;
+                display: block;
+                color: black;
+                font-size: 1.5rem;
+                span {
+                    color: #e43737;
+                    float: right;
+                }
+            }
+        }
+        .top {
+            color: white;
+            background: #e43737;
+            text-align: center;
+            font-size: 1.5rem;
+            .close {
+                position: absolute;
+                top: 0;
+                right: 7%;
+                bottom: 0;
+                margin: auto;
+                width: 9.896%;
+                height: 54%;
+            }
+        }
+    }
+    header {
+        .search_menu {
+            background: white;
+            position: relative;
+            border: 1px solid #e43737;
+            border-radius: 41px;
+            width: 86%;
+            margin-left: 2%;
+            overflow: hidden;
+            .nickname_enter,
+            .nickname_enter1 {
+                border: 0;
+                width: 85%;
+                font-size: 1.56rem;
+                line-height: 257%;
+                padding: 0 0 0 2.5%;
+            }
+            .nickname_search {
+                border: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 2.1%;
+                background: url('@{bg}/search.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 5.957%;
+                height: 64.53%;
+                padding: 0;
+                margin: auto;
+            }
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            right: 3%;
+            bottom: 0;
+            margin: auto;
+            width: 5.99%;
+            height: 38.75%;
+            img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    .friend_list {
+        padding-bottom: 20%;
+        li {
+            border-bottom: 1px solid #ccc;
+            padding: 2%;
+            .theme{
+                font-size: 1.5rem;
+                color: #656565;
+                font-weight: 500;
+            }
+            a {
+                display: block;
+                .profile_ico {
+                    display: inline-block;
+                    width: 10.852%;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    img {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .user_name {
+                width: 34.415%;
+                vertical-align: middle;
+                display: inline-block;
+                text-align: left;
+                color: black;
+                font-size: 1.2rem;
+                white-space: pre;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .conversation_name {
+                background: #ccc;
+                color: black;
+                font-size: 1.2rem;
+                padding: 1%;
+                vertical-align: middle;
+                width: 50.396%;
+                display: inline-block;
+                overflow-x: hidden;
+                white-space: pre;
+                text-overflow: ellipsis;
+                position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin par (){
+    display: block;
+    content: '';
+    clear: both;
+}
+ul{
+    &:after{
+        @include par();
+    }
+    li{
+        list-style: none;
+        float: left;
+        a{
+            color: red;
+        }
+    }
+}

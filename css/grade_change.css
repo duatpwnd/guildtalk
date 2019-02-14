@@ -1,0 +1,98 @@
+#wrap {
+  background: #e6e6e6;
+}
+#wrap section {
+  padding-bottom: 47.4%;
+}
+#wrap section .grade_change_member dl dt,
+#wrap section .present_grade dl dt,
+#wrap section .change_grade dl dt,
+#wrap section .change_reason dl dt {
+  border-bottom: 1px solid #ccc;
+  background: #e6e6e6;
+  font-size: 1.75rem;
+  padding: 2.344% 0 2.344% 5%;
+}
+#wrap section .grade_change_member dl dd,
+#wrap section .present_grade dl dd,
+#wrap section .change_grade dl dd,
+#wrap section .change_reason dl dd {
+  background: white;
+  border-bottom: 1px solid #ccc;
+  padding: 2.344% 0 2.344% 5%;
+  position: relative;
+}
+#wrap section .grade_change_member dl dd a,
+#wrap section .present_grade dl dd a,
+#wrap section .change_grade dl dd a,
+#wrap section .change_reason dl dd a {
+  font-size: 1.75rem;
+  color: black;
+}
+#wrap section .grade_change_member dl dd .grade_select,
+#wrap section .present_grade dl dd .grade_select,
+#wrap section .change_grade dl dd .grade_select,
+#wrap section .change_reason dl dd .grade_select {
+  width: 91%;
+  height: 100%;
+  font-size: 1.75rem;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url('../images/select_bar.png');
+  background-size: 3% 15%;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#wrap section .grade_change_member dl dd .limit_text,
+#wrap section .present_grade dl dd .limit_text,
+#wrap section .change_grade dl dd .limit_text,
+#wrap section .change_reason dl dd .limit_text {
+  border: none;
+  resize: none;
+  width: 100%;
+  font-family: 'malgungothic', " 맑은고딕";
+  font-size: 1.75rem;
+  padding: 3% 0 11% 0;
+}
+#wrap section .grade_change_member dl .reason_enter,
+#wrap section .present_grade dl .reason_enter,
+#wrap section .change_grade dl .reason_enter,
+#wrap section .change_reason dl .reason_enter {
+  padding: 0 0 0 5%;
+}
+#wrap section .grade_change_member dl .byte,
+#wrap section .present_grade dl .byte,
+#wrap section .change_grade dl .byte,
+#wrap section .change_reason dl .byte {
+  margin: 2% 4% 0 0;
+  text-align: right;
+  color: #b4b4b4;
+  font-size: 1.5rem;
+}
+#wrap section .grade_change_member dl .byte_count,
+#wrap section .present_grade dl .byte_count,
+#wrap section .change_grade dl .byte_count,
+#wrap section .change_reason dl .byte_count {
+  color: black;
+}
+#wrap section .grade_change_member dl .grade,
+#wrap section .present_grade dl .grade,
+#wrap section .change_grade dl .grade,
+#wrap section .change_reason dl .grade {
+  padding: 4.754% 0 4.754% 5%;
+}
+#wrap section .grade_change_btn {
+  background: #e43737;
+  border: 0;
+  color: white;
+  text-align: center;
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 7%;
+  padding: 3.386% 0;
+  font-size: 2rem;
+  display: block;
+}

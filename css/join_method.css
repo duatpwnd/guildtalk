@@ -1,0 +1,337 @@
+  html body #wrap{
+    background: #e6e6e6;
+  }
+  html body section {
+    padding: 3% 0 60% 0;
+  }
+  html body section .phone_join form fieldset .com_input_box,
+  html body section .email_join form fieldset .com_input_box {
+    border: 0;
+    width: 100%;
+    font-size: 1.75rem;
+    padding: 2.996% 0;
+    text-indent: 3%;
+  }
+  html body section .phone_join form fieldset .com_input_box::placeholder,
+  html body section .email_join form fieldset .com_input_box::placeholder {
+    font-size: 1.75rem;
+    color: black;
+    text-indent: 3%;
+  }
+  html body section .phone_join form fieldset .cord_enter div,
+  html body section .email_join form fieldset .cord_enter div {
+    background: white;
+    position: relative;
+  }
+  html body section .phone_join form fieldset .cord_enter .phone_receive .cord_btn,
+  html body section .email_join form fieldset .cord_enter .phone_receive .cord_btn,
+  html body section .phone_join form fieldset .cord_enter .email_receive .cord_btn,
+  html body section .email_join form fieldset .cord_enter .email_receive .cord_btn {
+    border: 1px solid #bababa;
+    background: white;
+    width: 21.485%;
+    height: 60.26%;
+    font-size: 1.43rem;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+  }
+  html body section .phone_join form fieldset .cord_enter .cord_confirm,
+  html body section .email_join form fieldset .cord_enter .cord_confirm {
+    border-top: 1px solid #ccc;
+  }
+  html body section .phone_join form fieldset .cord_enter .cord_confirm .confirm_btn,
+  html body section .email_join form fieldset .cord_enter .cord_confirm .confirm_btn {
+    background: #e43737;
+    border: 0;
+    color: white;
+    width: 21.485%;
+    height: 60.26%;
+    font-size: 1.43rem;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+  }
+  html body section .phone_join form fieldset .cord_enter .cord_confirm .limit_time,
+  html body section .email_join form fieldset .cord_enter .cord_confirm .limit_time {
+    height: 40%;
+    color: #e43737;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 26%;
+    bottom: 0;
+    margin: auto;
+  }
+  html body section .phone_join form fieldset .pw_enter,
+  html body section .email_join form fieldset .pw_enter {
+    margin-top: 3%;
+  }
+  html body section .phone_join form fieldset .pw_enter div,
+  html body section .email_join form fieldset .pw_enter div {
+    background: white;
+  }
+  html body section .phone_join form fieldset .pw_enter .pw_confirm2,
+  html body section .email_join form fieldset .pw_enter .pw_confirm2 {
+    border-top: 1px solid #ccc;
+  }
+  html body section .phone_join form fieldset .agree_wrap,
+  html body section .email_join form fieldset .agree_wrap {
+    margin-top: 3%;
+  }
+  html body section .phone_join form fieldset .agree_wrap div,
+  html body section .email_join form fieldset .agree_wrap div {
+    position: relative;
+    background: white;
+  }
+
+  html body section .phone_join form fieldset .agree_wrap div label,
+  html body section .email_join form fieldset .agree_wrap div label {
+    font-size: 1.75rem;
+    margin-left: 9%;
+    line-height: 279%;
+  }
+  html body section .phone_join form fieldset .agree_wrap div span,
+  html body section .email_join form fieldset .agree_wrap div span {
+    background: url('../images/btn_check_before.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 4.818%;
+    height: 49.32%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    margin: auto;
+  }
+  html body section .phone_join form fieldset .agree_wrap div input:checked + label span,
+  html body section .email_join form fieldset .agree_wrap div input:checked + label span {
+    background: url('../images/btn_check_after.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 4.818%;
+    height: 49.32%;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    bottom: 0;
+    margin: auto;
+  }
+  html body section .phone_join form fieldset .agree_wrap input[type='checkbox'],
+  html body section .email_join form fieldset .agree_wrap input[type='checkbox'] {
+    display: none;
+  }
+  html body section .phone_join form fieldset .agree_wrap .privacy,
+  html body section .email_join form fieldset .agree_wrap .privacy {
+    border-top: 1px solid #ccc;
+  }
+  html body section .phone_join form fieldset .help_txt,
+  html body section .email_join form fieldset .help_txt {
+    width: 94%;
+    font-size: 1.562rem;
+    color: #b4b4b4;
+    margin: 2% auto 7% auto;
+    display: block;
+  }
+  html body section .phone_join form fieldset .join_btn,
+  html body section .email_join form fieldset .email_join_btn {
+    background: #e43737;
+    border: 0;
+    color: white;
+    text-align: center;
+    width: 94%;
+    margin: 0 auto;
+    padding: 3.386% 0;
+    font-size: 2rem;
+    display: block;
+  }
+  #wrap {
+    background: #e6e6e6;
+  }
+  #wrap section {
+    padding: 3% 0 60% 0;
+  }
+  #wrap section .phone_join form fieldset .com_input_box,
+  #wrap section .email_join form fieldset .com_input_box {
+    border: 0;
+    width: 100%;
+    font-size: 1.75rem;
+    padding: 2.996% 0;
+    text-indent: 3%;
+  }
+  #wrap section .phone_join form fieldset .com_input_box::placeholder,
+  #wrap section .email_join form fieldset .com_input_box::placeholder {
+    font-size: 1.75rem;
+    color: black;
+    text-indent: 3%;
+  }
+  #wrap section .phone_join form fieldset .cord_enter div,
+  #wrap section .email_join form fieldset .cord_enter div {
+    background: white;
+    position: relative;
+  }
+  #wrap section .phone_join form fieldset .cord_enter .ph_txt1,
+  #wrap section .email_join form fieldset .cord_enter .ph_txt1,
+  #wrap section .phone_join form fieldset .cord_enter .ph_txt2,
+  #wrap section .email_join form fieldset .cord_enter .ph_txt2,
+  #wrap section .phone_join form fieldset .cord_enter .ph_txt3,
+  #wrap section .email_join form fieldset .cord_enter .ph_txt3,
+  #wrap section .phone_join form fieldset .cord_enter .ph_txt4,
+  #wrap section .email_join form fieldset .cord_enter .ph_txt4 {
+    color: #e43737;
+    margin-left: 3.5%;
+    display: none;
+  }
+  #wrap section .phone_join form fieldset .cord_enter .phone_receive .cord_btn,
+  #wrap section .email_join form fieldset .cord_enter .phone_receive .cord_btn,
+  #wrap section .phone_join form fieldset .cord_enter .email_receive .cord_btn,
+  #wrap section .email_join form fieldset .cord_enter .email_receive .cord_btn {
+    border: 1px solid #bababa;
+    background: white;
+    width: 21.485%;
+    height: 60.26%;
+    font-size: 1.43rem;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+  }
+  #wrap section .phone_join form fieldset .cord_enter .phone_receive #ph1,
+  #wrap section .email_join form fieldset .cord_enter .phone_receive #ph1,
+  #wrap section .phone_join form fieldset .cord_enter .email_receive #ph1,
+  #wrap section .email_join form fieldset .cord_enter .email_receive #ph1 {
+    -webkit-box-shadow: 0 0 0 50px #fff inset;
+    -webkit-text-fill-color: #000;
+  }
+  #wrap section .phone_join form fieldset .cord_enter .cord_confirm,
+  #wrap section .email_join form fieldset .cord_enter .cord_confirm {
+    border-top: 1px solid #ccc;
+  }
+  #wrap section .phone_join form fieldset .cord_enter .cord_confirm .confirm_btn,
+  #wrap section .email_join form fieldset .cord_enter .cord_confirm .confirm_btn {
+    background: #e43737;
+    border: 0;
+    color: white;
+    width: 21.485%;
+    height: 60.26%;
+    font-size: 1.43rem;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+  }
+  #wrap section .phone_join form fieldset .cord_enter .cord_confirm .limit_time,
+  #wrap section .email_join form fieldset .cord_enter .cord_confirm .limit_time {
+    height: 40%;
+    color: #e43737;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 26%;
+    bottom: 0;
+    margin: auto;
+  }
+  #wrap section .phone_join form fieldset .pw_enter,
+  #wrap section .email_join form fieldset .pw_enter {
+    margin-top: 3%;
+  }
+  #wrap section .phone_join form fieldset .pw_enter div,
+  #wrap section .email_join form fieldset .pw_enter div {
+    background: white;
+  }
+  #wrap section .phone_join form fieldset .pw_enter .pw_confirm2,
+  #wrap section .email_join form fieldset .pw_enter .pw_confirm2 {
+    border-top: 1px solid #ccc;
+  }
+  #wrap section .phone_join form fieldset .pw_enter .pw_txt1,
+  #wrap section .email_join form fieldset .pw_enter .pw_txt1,
+  #wrap section .phone_join form fieldset .pw_enter .pw_txt2,
+  #wrap section .email_join form fieldset .pw_enter .pw_txt2,
+  #wrap section .phone_join form fieldset .pw_enter .pw_txt3,
+  #wrap section .email_join form fieldset .pw_enter .pw_txt3 {
+    color: #e43737;
+    margin-left: 3.5%;
+    display: none;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap,
+  #wrap section .email_join form fieldset .agree_wrap {
+    margin-top: 3%;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap div,
+  #wrap section .email_join form fieldset .agree_wrap div {
+    position: relative;
+    background: white;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap div a,
+  #wrap section .email_join form fieldset .agree_wrap div a {
+    vertical-align: middle; 
+    color: black;
+    width: 21.23%;
+    border: 1px solid #bababa;
+    font-size: 1.43rem;
+    text-align: center;
+    padding: 1% 0;
+    display: inline-block;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap div label,
+  #wrap section .email_join form fieldset .agree_wrap div label {
+    font-size: 1.75rem;
+    margin-left: 9%;
+    line-height: 279%;
+    width: 65%;
+    display: inline-block;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap div span,
+  #wrap section .email_join form fieldset .agree_wrap div span {
+    background: url('../images/btn_check_before.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 4.818%;
+    height: 49.32%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    margin: auto;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap div input:checked + label span,
+  #wrap section .email_join form fieldset .agree_wrap div input:checked + label span {
+    background: url('../images/btn_check_after.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 4.818%;
+    height: 49.32%;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    bottom: 0;
+    margin: auto;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap input[type='checkbox'],
+  #wrap section .email_join form fieldset .agree_wrap input[type='checkbox'] {
+    display: none;
+  }
+  #wrap section .phone_join form fieldset .agree_wrap .privacy,
+  #wrap section .email_join form fieldset .agree_wrap .privacy {
+    border-top: 1px solid #ccc;
+  }
+  #wrap section .phone_join form fieldset .help_txt,
+  #wrap section .email_join form fieldset .help_txt {
+    width: 94%;
+    font-size: 1.562rem;
+    color: #b4b4b4;
+    margin: 2% auto 7% auto;
+    display: block;
+  }
+
+  

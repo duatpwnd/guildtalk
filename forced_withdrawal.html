@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>강제탈퇴</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="common/font.css" rel="stylesheet" type="text/css">
+    <link href="css/forced_withdrawal.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <style>
+        /* textarea 스크롤 생길시 스타일 정의하기 */
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e43737;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>강제탈퇴</h1>
+        </header>
+        <section>
+            <div class="forced_withdrawal_member">
+                <dl>
+                    <dt>강제탈퇴 대상 멤버</dt>
+                    <dd>
+                        <a href="#">인중타격(limjunsn1234)</a>
+                    </dd>
+
+                </dl>
+                <div class="forbidden_check">
+                    <input type="checkbox" id="forbidden" checked>
+                    <label for="forbidden">
+                        <span></span>
+                        우리 카페에 재가입이 불가하도록 합니다.</label>
+                </div>
+            </div>
+            <dlv class="withdrawal_reason">
+                <dl>
+                    <dt>강제탈퇴 사유 </dt>
+                    <dd>
+                        <input type="checkbox" id="forbidden1" checked>
+                        <label for="forbidden1">
+                            <span></span>바람직하지 않은 활동(광고,도배,욕설 등)</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" id="forbidden2">
+                        <label for="forbidden2">
+                            <span></span>우리카페 내 자체 운영 원칙에 위배되는 활동</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" id="forbidden3">
+                        <label for="forbidden3">
+                            <span></span>성인/도박 등 불법광고 및 스팸 활동</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" id="forbidden4">
+                        <label for="forbidden4">
+                            <span></span>카페 폐쇄를 위한 탈퇴 진행</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" id="forbidden5">
+                        <label for="forbidden5">
+                            <span></span>기타</label>
+                    </dd>
+                    <dd class="reason_enter">
+                        <textarea rows="1" class="limit_text"  placeholder="기타 사유 입력(최대 한글 25자)" onkeyup="var text = document.getElementsByClassName('limit_text')[0];if (text.value.length > 25) {text.value = text.value.substring(0,25);}"></textarea>
+                    </dd>
+                </dl>
+            </dlv>
+            <p class="withdrawal_txt">
+                탈퇴사유를 선택하지 않으시면 강퇴가 불가능하며 선택하신 사유는 강퇴 멤버에게 알림메일로 전송됩니다.
+            </p>
+            <button type="submit" class="withdrawal_btn">강제탈퇴</button>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+@bg: '../images';
+html {
+    body {
+        #wrap {
+            .pd_ch {
+                padding: 4.93% 0;
+            }
+            header {
+                &:after{
+                    display: block;
+                    content:'';
+                    clear: both;
+                }
+                .guildtalk_logo {
+                    background: url('@{bg}/guildtalk.png');
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    width: 27.605%;
+                    height: 39.63%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-indent: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 2.6%;
+                    bottom: 0;
+                    margin: auto;
+                }
+                .menu {
+                    position: absolute;
+                    top: 0;
+                    right: 3%;
+                    bottom: 0;
+                    margin: auto;
+                    width: 5.99%;
+                    height: 56.8%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            footer {
+                max-width: 768px;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+            }
+            .search_menu {
+                box-sizing: border-box;
+                background: white;
+                position: relative;
+                border: 1px solid #e43737;
+                width: 90%;
+                margin:0 auto;
+                margin-top: 2%;
+                .nickname_enter {
+                    border: 0;
+                    width: 85%;
+                    font-size: 1.56rem;
+                    padding: 2.5% 0 2.5% 3%;
+                    &::placeholder {
+                        font-size: 1.56rem;
+                        color: black;
+                    }
+                }
+                .nickname_search {
+                    border: 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 2.1%;
+                    background: url('../images/search.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    width: 5.957%;
+                    height: 64.53%;
+                    padding: 0;
+                    margin: auto;
+                }
+            }
+            .menu_ch {
+                float: left;
+                margin-top: 0;
+            }
+            .confirm {
+                color: white;
+                font-size: 1.3rem;
+                text-align: center;
+                width: 10%;
+                float: left;
+                line-height: 134%;
+                padding: 2.438% 0;
+            }
+            .member_list {
+                padding-bottom: 15%;
+                .strategy {
+                    font-size: 1.875rem;
+                    border-bottom: 2px solid black;
+                    width: 94.6%;
+                    margin: 0 auto;
+                    padding: 2% 0;
+                    font-weight: 100;
+                }
+                li {
+                    border-bottom: 1px solid #ccc;
+                    padding: 2.8%;
+                    width: 89%;
+                    margin: 0 auto;
+                    a {
+                        display: block;
+                        color: black;
+                    }
+                    .profile_thumb {
+                        width: 8.486%;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .ch_thumb {
+                        height: 77.34%;
+                    }
+                    .member_info {
+                        position: relative;
+                        padding-left: 2%;
+                        width: 88%;
+                        display: inline-block;
+                        vertical-align: middle;
+                        .guild_name {
+                            font-size: 1.2rem;
+                            line-height: 100%;
+                            color: #e43737;
+                        }
+                        .new {
+                            width: 3.658%;
+                        }
+                        .date {
+                            margin-left: 1%;
+                        }
+                        .time,
+                        .date {
+                            color: #969696;
+                            font-size: 1.2rem;
+                            vertical-align: middle;
+                            line-height: 100%;
+                        }
+                        .chk_box:checked+label .chk1 {
+                            background: url('@{bg}/btn_check_after.png');
+                            background-size: 100% 100%;
+                            width: 6.015%;
+                            height: 64.25%;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                        .user_id {
+                            display: block;
+                            font-size: 1.5rem;
+                            line-height: 137%;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            .chk1 {
+                                display: inline-block;
+                                background: url('@{bg}/btn_check_before.png');
+                                background-size: 100% 100%;
+                                width: 6.015%;
+                                height: 64.25%;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                margin: auto;
+                            }
+                        }
+                        .user_ch {
+                            padding: 2% 0;
+                        }
+                    }
+                    .arrow_ico2 {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 1.952%;
+                        height: 37.57%;
+                    }
+                    .arrow_ico3 {
+                        height: 65.63%;
+                    }
+                    .arrow_ico4 {
+                        height: 38.62%;
+                    }
+                    img {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                    .profile_ico {
+                        display: inline-block;
+                        width: 8.486%;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        img {
+                            vertical-align: middle;
+                            width: 100%;
+                        }
+                    }
+                    .user_name {
+                        width: 57%;
+                        vertical-align: middle;
+                        display: block;
+                        text-align: left;
+                        color: black;
+                        font-size: 1.5rem;
+                    }
+                    .conversation_name {
+                        background: #ccc;
+                        color: black;
+                        font-size: 1.2rem;
+                        padding: 1%;
+                        vertical-align: middle;
+                        width: 60.396%;
+                        display: inline-block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .comment {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 8.292%;
+                        height: 93.14%;
+                        text-align: center;
+                        line-height: 85%;
+                        font-size: 1.5rem;
+                        img {
+                            vertical-align: middle;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .total_member,
+            .bookmark {
+                display: block;
+                font-size: 1.5rem;
+                line-height: 137%;
+                margin-left: -3%;
+                .member_check {
+                    color: #e43737;
+                }
+            }
+        }
+    }
+}

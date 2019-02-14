@@ -1,0 +1,97 @@
+@bg: '../images';
+section {
+    width: 88.543%;
+    padding: 12.5% 5.73% 71.463% 5.73%;
+    .email_logo,
+    .phone_logo {
+        width: 57.943%;
+        padding: 2.427% 0;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        margin: 0 auto;
+        margin-bottom: 10.5%;
+        background: url('@{bg}/email_logo.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .email_enter, .email_txt{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .email_txt{
+        padding-bottom: 5%;
+        font-weight: 500;
+    }
+    fieldset {
+        div {
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid #ccc;
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 5%;
+                margin: auto;
+            }
+            .pw_ico {
+                width: 4.425%;
+            }
+            .email_ico {
+                width: 5.9%;
+                left: 4.2%;
+            }
+            .phone_ico {
+                width: 3.245%;
+                left: 5.5%;
+            }
+            input {
+                width: 87%;
+                padding: 4.943% 0;
+                font-size: 2.0625rem;
+                border: 0;
+                margin-left: 13%;
+                &::placeholder {
+                    color: black;
+                    font-size: 2.0625rem;
+                }
+            }
+        }
+        .phone_pw,
+        .email_pw {
+            border-top: 0;
+        }
+        .error_text {
+            display: none;
+            margin-top: 2.147%;
+            font-size: 1.75rem;
+            color: #e43737;
+            line-height: 136%;
+        }
+        .submit_btn {
+            background: #e43737;
+            border: 0;
+            color: white;
+            width: 100%;
+            font-size: 2.375rem;
+            padding: 5.148% 0;
+            margin-top: 7%;
+        }
+    }
+    .find_info {
+        margin: 0 auto;
+        margin-top: 9%;
+        text-align: center;
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.75rem;
+        }
+        .bar {
+            margin: 0 3.5%;
+            color: #b9b9b9;
+            font-size: 1.75rem;
+        }
+    }
+}

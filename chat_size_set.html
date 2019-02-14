@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>채팅창 크기 설정</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="common/font.css" rel="stylesheet" type="text/css">
+    <link href="css/guild_closing.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>채팅창 크기 설정</h1>
+        </header>
+        <section class="guild">
+            <ul class="closing_box">
+                <li class="theme">
+                    <label><strong>세로 사이즈</strong></label>
+                </li>
+                <li>
+                    <input type="checkbox" id="mobile" checked value="0">
+                    <label for="mobile" name='only'>3단모드<span class="expression">채팅창에서 최근 3개의 메세지가 표시됩니다.</span>
+                        <span class="chk1 circle_chk"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pc" value="1">
+                    <label for="pc" name='only'>5단모드<span class="expression">채팅창에서 최근 5개의 메세지가 표시됩니다.</span>
+                        <span class="chk1 circle_chk"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pc" value="2">
+                    <label for="pc" name='only'>최대모드<span class="expression">채팅창에서 보여줄 수 있는 최대 메세지가 표시됩니다.</span>
+                        <span class="chk1 circle_chk"></span>
+                    </label>
+                </li>
+                <li class="theme">
+                    <label for="gamename"><strong>가로 사이즈</strong></label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pc" value="3">
+                    <label for="pc" name='only'>Short<span class="expression1">가로모드 디바이스의 1/3<br>세로모드 디바이스의 1/2</span>
+                        <span class="chk1 circle_chk"></span>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pc" value="4">
+                    <label for="pc" name='only'>Long<span class="expression1">가로모드 디바이스 전체<br>세로모드 디바이스 전체</span>
+                        <span class="chk1 circle_chk"></span>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit" class="closing_btn">확인</button>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

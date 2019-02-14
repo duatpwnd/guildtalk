@@ -1,0 +1,135 @@
+@bg: '../images';
+#wrap {
+    background: #e6e6e6;
+    section {
+        padding-bottom: 34.4%;
+        .forced_withdrawal_member {
+            dl {
+                dt {
+                    border-bottom: 1px solid #ccc;
+                    background: #e6e6e6;
+                    font-size: 1.75rem;
+                    padding: 2.344% 0 2.344% 5%;
+                }
+                dd {
+                    background: white;
+                    border-bottom: 1px solid #ccc;
+                    padding: 2.344% 0 2.344% 5%;
+                    a {
+                        font-size: 1.75rem;
+                        color: black;
+                    }
+                }
+            }
+            .forbidden_check {
+                background: #e6e6e6;
+                padding: 0 0 0 12%;
+                position: relative;
+                label {
+                    line-height: 268%;
+                    font-size: 1.75rem;
+                    span {
+                        background: url('@{bg}/btn_check_before.png');
+                        background-size: 100% 100%;
+                        width: 4.818%;
+                        height: 49.32%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 5.5%;
+                        margin: auto;
+                    }
+                }
+                input:checked+label span {
+                    background: url('@{bg}/btn_check_after.png');
+                    background-size: 100% 100%;
+                    width: 4.818%;
+                    height: 49.32%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 5.5%;
+                    margin: auto;
+                }
+            }
+        }
+        .withdrawal_reason {
+            dl {
+                dt {
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    background: #e6e6e6;
+                    font-size: 1.75rem;
+                    padding: 2.344% 0 2.344% 5%;
+                }
+                dd {
+                    background: white;
+                    border-bottom: 1px solid #ccc;
+                    padding-left: 12%;
+                    position: relative;
+                    label {
+                        line-height: 268%;
+                        font-size: 1.75rem;
+                    }
+                    span {
+                        background: url('@{bg}/btn_check_before.png');
+                        background-size: 100% 100%;
+                        width: 4.818%;
+                        height: 49.32%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 5.5%;
+                        margin: auto;
+                    }
+                    input:checked+label span {
+                        background: url('@{bg}/btn_check_after.png');
+                        background-size: 100% 100%;
+                        width: 4.818%;
+                        height: 49.32%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 5.5%;
+                        margin: auto;
+                    }
+                }
+                .reason_enter {
+                    padding-left: 5%;
+                    .limit_text {
+                        border: none;
+                        resize: none;
+                        width: 99%;
+                        display: table;
+                        font-family: 'malgungothic', " 맑은고딕";
+                        font-size: 1.75rem;
+                        line-height: 258%;
+                        &::placeholder {
+                            font-family: 'malgungothic', " 맑은고딕";
+                            font-size: 1.75rem;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .withdrawal_txt {
+            width: 94%;
+            font-size: 1.562rem;
+            color: #b4b4b4;
+            margin: 2% auto 7% auto;
+            display: block;
+        }
+        .withdrawal_btn {
+            background: #e43737;
+            border: 0;
+            color: white;
+            text-align: center;
+            width: 94%;
+            margin: 0 auto;
+            padding: 3.386% 0;
+            font-size: 2rem;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>등급변경</title>
+    <link href="common/reset.css" rel="stylesheet" type="text/css">
+    <link href="common/common.css" rel="stylesheet" type="text/css">
+    <link href="css/grade_change.css" rel="stylesheet" type="text/css">
+    <link href="common/mediaquery.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        /* 모바일에서 textarea 스크롤 생기게 하기 */
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e43737;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#" class="back">
+                <img src="images/back.png" alt="뒤로가기" title="뒤로가기">
+            </a>
+            <h1>등급변경</h1>
+        </header>
+        <section>
+            <div class="grade_change_member">
+                <dl>
+                    <dt>등급변경 대상 멤버</dt>
+                    <dd>
+                        <a href="#">인중타격(limjunsn1234)</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="present_grade">
+                <dl>
+                    <dt>현재 등급</dt>
+                    <dd class="grade">
+                        <select class="grade_select">
+                            <option>변경할 등급을 선택해 주세요</option>
+                            <option>마스터</option>
+                            <option>매니저</option>
+                            <option>길드원</option>
+                        </select>
+                    </dd>
+                </dl>
+            </div>
+            <div class="change_grade">
+                <dl>
+                    <dt>변경 등급</dt>
+                    <dd class="grade">
+                        <select class="grade_select">
+                            <option>변경할 등급을 선택해 주세요</option>
+                            <option>선택2</option>
+                            <option>선택3</option>
+                            <option>선택4</option>
+                            <option>선택5</option>
+                        </select>
+                    </dd>
+                </dl>
+            </div>
+            <div class="change_reason">
+                <dl>
+                    <dt>변경 사유</dt>
+                    <dd class="reason_enter">
+                        <textarea class="limit_text" placeholder="등급 변경 사유를 입력해주세요" onkeyup="bytecheck()"></textarea>
+                    </dd>
+                    <p class="byte">
+                        <span class="byte_count">0</span>/100 byte</p>
+                </dl>
+            </div>
+            <button type="submit" class="grade_change_btn">등급변경 완료</button>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="friend_main.html" class="friend_btn">
+                        <img src="images/friend.png" alt="친구" title="친구">
+                    </a>
+                </li>
+                <li>
+                    <a href="talk_view.html" class="talk_btn">
+                        <img src="images/talk.png" alt="채팅" title="채팅">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class="guild_btn">
+                        <img src="images/guild.png" alt="길드" title="길드">
+                    </a>
+                </li>
+                <li>
+                    <a href="main1.html" class="game_btn">
+                        <img src="images/game.png" alt="게임" title="게임">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

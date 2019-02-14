@@ -1,0 +1,95 @@
+@bg:'../images';
+header {
+    .enroll_btn {
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        bottom: 0;
+        margin: auto;
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 134%;
+        height: 46%;
+    }
+}
+.guild{
+    padding-bottom: 30%;
+}
+select {
+    width: 100%;
+    font-size: 1.75rem;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2%;
+}
+.btn_wrap2,
+.btn_wrap1 {
+    margin-top: 4%;
+    &:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    a {
+        font-size: 1.75rem;
+        text-align: center;
+        line-height: 284%;
+        color: white;
+        width: 50%;
+        display: inline-block;
+    }
+    .btn1 {
+        float: left;
+        background: #505050;
+    }
+    .btn2 {
+        float: right;
+        background: #e43737;
+    }
+    .btn3,
+    .btn4 {
+        box-sizing: border-box;
+        background: white;
+    }
+    .btn3 {
+        border: 1px solid #e43737;
+        color: #e43737;
+    }
+    .btn4 {
+        border: 1px solid #ccc;
+        color: #ccc;
+    }
+}
+.btn_wrap2{
+    margin-top: 0;
+}
+.write {
+    margin-top: 2%;
+    input {
+        display: block;
+        width: 100%;
+        font-size: 1.75rem;
+        border: 0;
+        text-indent: 2%;
+        padding: 2% 0;
+        border-bottom: 7px solid #ccc;
+        &::placeholder {
+            text-indent: 2%;
+            font-size: 1.75rem;
+        }
+    }
+    textarea {
+        width: 100%;
+        resize: none;
+        padding: 2%;
+        box-sizing: border-box;
+        border: 0;
+        font-size: 1.75rem;
+        font-family: 'malgungothic', '맑은고딕';
+        &::placeholder {
+            font-size: 1.75rem;
+            font-family: 'malgungothic', '맑은고딕';
+        }
+    }
+}

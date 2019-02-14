@@ -1,0 +1,494 @@
+/*pagination*/
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position: static;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 25%;
+    text-align: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    border-radius: 0px;
+    background: white;
+    border-bottom: 3px solid black;
+    padding: 2% 0;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    border-bottom: 3px solid #e43737;
+    color: #e43737;
+    font-size: 1.5rem;
+    padding: 2% 0;
+}
+
+/*pagination*/
+
+#wrap {
+    overflow-x: hidden;
+}
+
+#wrap section {
+    padding-bottom: 17%;
+    
+}
+#wrap section .exile_member {
+    position: relative;
+    padding: 3% 0;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+#wrap section .exile_member .top_menu:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#wrap section .exile_member .top_menu {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#wrap section .exile_member .pd_ch {
+    padding-bottom: 42.508%;
+}
+
+#wrap section .exile_member .back {
+    width: 3.328%;
+    display: inline-block;
+}
+
+#wrap section .exile_member .menu {
+    width: 6.656%;
+    float: right;
+}
+
+#wrap section .exile_member .menu img,
+.back img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#wrap section .exile_member h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 100;
+    line-height: 134%;
+}
+
+#wrap section .exile_member .guild_wrap {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 31.547%;
+    position: relative;
+}
+#wrap section .exile_member .guild_wrap_ch1{
+    margin-top: 26.636%;
+}
+#wrap section .exile_member .guild_wrap_modify{
+    margin-top:32%;
+}
+#wrap section .exile_member .guild_wrap:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+#wrap section .exile_member .guild_wrap .profile,
+.guild_master_profile {
+    width: 18.37%;
+    overflow: hidden;
+    border-radius: 55%;
+    position: absolute;
+    height: 84%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.guild_master_profile {
+    width: 13.023%;
+    height: 88.63%;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+#wrap section .exile_member .guild_wrap .profile img,
+.guild_master_profile img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+#wrap section .exile_member .guild_wrap .guild_m1 span,
+#wrap section .exile_member .guild_wrap .guild_m2 span {
+    color: white;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 136%;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap {
+    width: 77.5%;
+    float: right;
+}
+
+#wrap section .exile_member .guild_wrap .info_w {
+    width: 85%;
+    padding: 1% 0;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap .manager,
+.master {
+    vertical-align: middle;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.master {
+    font-size: 1.5rem;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap .guild_manager,
+.master {
+    vertical-align: middle;
+    width: 17.923%;
+}
+
+.enroll {
+    vertical-align: middle;
+    width: 16.343%;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m1,
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m2 {
+    margin: 3% 0;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m1 .b1,
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m2 .b1 {
+    border: 1px solid white;
+    width: 15%;
+    padding: 0.4% 0;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m1 .b2,
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m2 .b2 {
+    border: 1px solid white;
+    width: 25%;
+    margin-right: 1%;
+    padding: 0.4% 0;
+}
+
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m1 .b3,
+#wrap section .exile_member .guild_wrap .info_wrap .guild_m2 .b3 {
+    float: right;
+}
+.swiper-container .cur_trick li {
+    padding: 2.01%;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+}
+.swiper-container .cur_trick .guild_mark {
+    width: 7.553%;
+    vertical-align: middle;
+    border-radius: 25%;
+    overflow: hidden;
+    height: 61.16%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.guild_mark img,
+.comment img {
+    width: 100%;
+    vertical-align: middle;
+}
+.guild_mark img{
+    height: 100%;
+}
+.swiper-container .cur_trick li a {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 135%;
+    margin-left: 10%;
+}
+.swiper-container .reply_list li a{
+    margin-left: 0;
+    font-size: 1.3rem;
+    width: 100%;
+}
+.swiper-container .reply_list li a span{
+    vertical-align: middle;
+}
+.guild_s1 {
+    width: 80%;
+    vertical-align: middle;
+}
+
+.swiper-container .cur_trick li .comment {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 6.642%;
+    height: 57.14%;
+    text-align: center;
+    line-height: 85%;
+}
+
+.swiper-container .cur_trick li .l_move {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.swiper-container .reply_list li .l_move{
+    width: 85%;
+    display: inline-block;
+}
+.swiper-container .cur_trick li .new {
+    width: 9.82%;
+    height: 68.3%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.swiper-container .cur_trick li .date{
+    display: inline-block;
+    color: #ccc;
+    font-size: 1.5rem;
+    width: 38%;
+    position: relative;
+}
+.swiper-container .cur_trick li .nick_name {
+    color: #e43737;
+}
+.member {
+    position: relative;
+    margin-top: 2%;
+}
+
+.member:after,
+.member ul:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.member span {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.member ul {
+    width: 75%;
+    float: right;
+}
+
+.member ul li {
+    width: 16%;
+    text-align: center;
+    float: right;
+}
+
+.member ul li a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.member ul li a {
+    display: inline-block;
+}
+
+.member ul li .w1 {
+    width: 56.74%;
+}
+
+.member ul li .w2 {
+    width: 48.23%;
+}
+
+.member ul li .w3 {
+    width: 62.43%;
+}
+
+.member ul li .w4 {
+    width: 53.92%;
+}
+
+.menu_wrap {
+    position: absolute;
+    top: 0;
+    right: -51%;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: white;
+}
+
+.menu_wrap li a {
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.menu_wrap li {
+    position: relative;
+    padding: 5%;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu_wrap li span {
+    color: #e43737;
+    float: right;
+}
+
+.menu_wrap .top {
+    color: white;
+    background: #e43737;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu_wrap .close {
+    position: absolute;
+    top: 0;
+    right: 7%;
+    bottom: 0;
+    margin: auto;
+    width: 9.896%;
+    height: 54%;
+}
+
+.page_show {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.page_show a {
+    font-size: 2rem;
+    width: 13%;
+    display: inline-block;
+    color: black;
+}
+
+.join {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    width: 19%;
+    padding: 0.963% 0;
+    line-height: 136%;
+    background: #e43737;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+.exile_member .profile_img {
+      width: 15.625%;
+      border-radius: 50%;
+      margin-left: 4%;
+      overflow: hidden;
+      position: absolute;
+      left: 5%;
+      bottom: 5%;
+      margin: auto;
+      height: 28.88%;
+}
+
+.exile_member .profile_img img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.profile_info .userId {
+    width: 6%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 4%;
+}
+
+.profile_info .userId,
+.userId1 {
+    vertical-align: top;
+    display: inline-block;
+    color:black;
+}
+.profile_info .conversation_name {
+        background: #d7f5fd;
+        border-radius: 5px;
+        padding: 1%;
+        width: 90%;
+        font-size: 1.2rem;
+        display: block;
+        margin: 0 auto;
+        line-height: 137%;
+}
+
+.profile_info_modify {
+    bottom: -64%;
+}
+
+.info_r {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.basic_self {
+    width: 92%;
+    font-size: 1.2rem;
+    margin: 3% 0 2% 4%;
+    line-height: 137%;
+}
+
+.basic_self_modify {
+    margin: 7% 0 2% 4%;
+}
+
+.chat_link {
+    background: #e43737;
+    border: 0;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 1.2rem;
+    display: block;
+    line-height: 264%;
+}
+.opacity_mask{
+    background: rgba(0, 0,0,0.2);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+}
+.page_show .prev {
+    float: left;
+}
+.page_show .next {
+    float: right;
+}

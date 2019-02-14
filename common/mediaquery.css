@@ -1,0 +1,8 @@
+@media all and (max-width:768px) {
+    html {
+        font-size: 2vw;
+    }
+    .guild_mark1{
+        height: 13.8vw;
+    }
+}

@@ -1,0 +1,170 @@
+section {
+    width: 88.543%;
+    padding: 12.5% 5.73% 71.463% 5.73%;
+}
+
+section .email_logo,
+section .phone_logo {
+    width: 57.943%;
+    padding: 2.427% 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 10.5%;
+    background: url('../images/email_logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section .email_enter,
+section .email_txt {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section .email_txt {
+    padding-bottom: 5%;
+    font-weight: 500;
+}
+
+section fieldset div {
+    position: relative;
+    border: 1px solid #ccc;
+}
+section fieldset div img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    margin: auto;
+}
+section fieldset div .pw_ico {
+    width: 4.425%;
+}
+
+section fieldset div .email_ico {
+    width: 5.9%;
+    left: 4.2%;
+}
+
+section fieldset div .phone_ico {
+    display: table-cell;
+    border-right: 0;
+    vertical-align: middle;
+    width: 6.5%;
+}
+
+section fieldset div input {
+    width: 86.9%;
+    padding: 4.94% 0;
+    font-size: 2.06rem;
+    border: 0;
+    margin-left: 13%;
+}
+
+section fieldset div input::placeholder {
+    color: #ccc;
+    font-size: 2.06rem;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+section fieldset div input:-ms-input-placeholder {
+    color: #ccc;
+
+}
+section fieldset div input::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 2.06rem;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+section fieldset .phone_pw,
+section fieldset .email_pw {
+    border-top: 0;
+}
+
+section fieldset .error_text {
+    display: none;
+    margin-top: 2.147%;
+    font-size: 1.75rem;
+    color: #e43737;
+    line-height: 136%;
+}
+
+section fieldset .submit_btn {
+    background: #e43737;
+    border: 0;
+    color: white;
+    width: 100%;
+    font-size: 2.375rem;
+    padding: 5.148% 0;
+    margin-top: 7%;
+}
+
+section .find_info {
+    margin: 0 auto;
+    margin-top: 9%;
+    text-align: center;
+}
+
+section .find_info a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+section .find_info .bar {
+    margin: 0 3.5%;
+    color: #b9b9b9;
+    font-size: 1.75rem;
+}
+
+.withdrawal_txt {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    line-height: 175%;
+}
+
+.withdrawal_id,
+.withdrawal_pw {
+    font-size: 1.5rem;
+    padding: 2.5% 2%;
+}
+
+.confirm_btn {
+    width: 20%;
+    margin-left: 0;
+    padding: 1% 0;
+    font-size: 1.5rem;
+}
+
+.confirm_pw {
+    width: 59%;
+    border: 1px solid #ccc;
+    margin-left: 0;
+    padding: 0;
+}
+
+.path_home {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.account_find {
+    width: 39%;
+}
+
+.new_email {
+    border: 0;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.resend {
+    border: 0;
+}
+.withdrawal_pw label{
+  display: block;
+  margin-bottom: 3%;
+}

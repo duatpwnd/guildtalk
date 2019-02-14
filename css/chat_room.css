@@ -1,0 +1,251 @@
+html,
+body {
+    position: relative;
+}
+
+#wrap {
+    background: #ededed;
+    overflow: hidden;
+}
+
+#wrap img {
+    vertical-align: middle;
+}
+
+#wrap .menu_wrap {
+    position: absolute;
+    top: 0;
+    right: -51%;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: white;
+}
+
+#wrap .menu_wrap li {
+    position: relative;
+    padding: 3%;
+    border-bottom: 1px solid #ccc;
+}
+
+#wrap .menu_wrap li a {
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 2rem;
+}
+
+#wrap .menu_wrap li .arrow {
+    color: #e43737;
+    float: right;
+}
+#wrap .menu_wrap li span{
+    padding: 5% 0;
+    display: inline-block;
+}
+#wrap .menu_wrap .top {
+    color: white;
+    background: #e43737;
+    text-align: center;
+    padding: 6% 0;
+    font-size: 1.7rem;
+}
+
+#wrap .menu_wrap .top .close {
+    position: absolute;
+    top: 0;
+    right: 7%;
+    bottom: 0;
+    margin: auto;
+    width: 9.896%;
+    height:45.75%;
+}
+
+#wrap .menu {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    margin: auto;
+    width: 5.99%;
+    height: 50.6%;
+}
+
+#wrap .menu img {
+    width: 100%;
+}
+
+#wrap section {
+    padding: 1.5%;
+    height: 80%;
+    overflow-y: auto;
+    background: #ededed;
+}
+
+/* 채팅입력창 && 업로드 :: S  */
+
+.message_wrap {
+    max-width: 768px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.message_wrap .message_send:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.message_wrap .message_send .message_enter {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 0;
+    resize: none;
+    font-size: 1.5rem;
+    width: 68%;
+    line-height: 133%;
+    padding: 4.623% 0;
+    padding-left: 17%;
+    font-family: 'malgungothic', '맑은고딕';
+    float: left;
+}
+
+.message_wrap .message_send .message_enter::placeholder {
+    font-size: 1.5rem;
+    font-family: 'malgungothic', '맑은고딕';
+}
+
+.message_wrap .message_send #upload {
+    display: none;
+}
+
+.message_wrap .message_send label {
+    background: white;
+    width: 15%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 37%;
+}
+
+.message_wrap .message_send label .upload_btn {
+    width: 34.7%;
+}
+
+.message_wrap .message_send .send_btn {
+    font-family: 'malgungothic', '맑은고딕';
+    border: 0;
+    background: #ccc;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 133%;
+    width: 15%;
+    padding: 4.623% 0;
+    text-align: center;
+    float: left;
+}
+
+.message_wrap .preview_show ul li {
+    position: relative;
+    background: gold;
+    border-bottom: 2px solid black;
+    padding: 2% 0;
+}
+
+.message_wrap .preview_show ul li a {
+    width: 10%;
+    padding: 3% 0px;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.message_wrap .preview_show ul li .file_info {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2%;
+    font-size: 1.5rem;
+}
+
+.message_wrap .preview_show ul li .upload_close {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    margin: auto;
+    width: 7%;
+}
+
+.message_wrap .preview_show ul li:first-child {
+    margin-top: 0;
+}
+
+.message_wrap footer {
+    position: relative !important;
+}
+
+/* 채팅입력창 && 업로드 :: E  */
+
+/* 채팅 메세지 스타일*/
+
+.m1 {
+    margin-top: 3%;
+}
+
+.m1 .profile_img {
+    width: 10.74%;
+    display: inline-block;
+    border-radius: 20%;
+    overflow: hidden;
+    max-height: 80px;
+}
+
+.m1 .profile_img img {
+    width: 100%;
+}
+
+.m1 .name {
+    vertical-align: top;
+}
+
+.m1 .text_message {
+    max-width: 640px;
+    background: white;
+    font-size: 1.5rem;
+    overflow: hidden;
+    word-break: break-all;
+    padding: 1%;
+    border-radius: 3px;
+    white-space: pre-wrap;
+}
+
+.m1 .text_message img {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.m1 .record_date {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+.live_button{
+    position: absolute;
+    top: 0;
+    right: 13%;
+    bottom: 0;
+    margin: auto;
+    width: 15.235%;
+    height: 64.72%;
+}
+.live_button img{
+    width: 100%;
+}

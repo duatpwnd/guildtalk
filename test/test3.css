@@ -1,0 +1,10 @@
+ul:after {
+  display: block;
+  content: '';
+  clear: both; }
+
+ul li {
+  list-style: none;
+  float: left; }
+  ul li a {
+    color: red; }
