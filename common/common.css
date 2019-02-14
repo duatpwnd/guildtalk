@@ -2,7 +2,10 @@ html {
   height: 100%;
 }
 html body {
-  height: 90%;
+  height: 100%;
+}
+body, button, input, select, textarea{
+  font-family:'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 }
 html body #wrap {
   max-width: 768px;
@@ -33,7 +36,6 @@ html body #wrap header .back img{
 html body #wrap header h1 {
   color: white;
   text-align: center;
-  font-family: 'malgungothic';
   font-size: 1.875rem;
   font-weight: 500;
   line-height: 134%;
@@ -47,7 +49,7 @@ html body #wrap footer {
   position: fixed;
   background: #32343d;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
 
 }
 html body #wrap footer ul:after {
@@ -85,23 +87,7 @@ html body #wrap footer ul li .game_btn{
 input[type='checkbox'] {
   display:none;
 }
-
-/* ì•„ì´í° input ë‘¥ê·¼í…Œë‘ë¦¬ ê·¸ë¦¼ìž ì œê±° */
-input{
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
-/* select í™”ì‚´í‘œ ì—†ì• ê¸° */
-select{
-  background: white;
-  -webkit-appearance: none; 
-  -moz-appearance: none;    
-  appearance: none;
-}
-select::-ms-expand {
-  display: none;            
-}
-/* ë¡œë”©ì¤‘ í™”ë©´ */
+/* 로딩중 화면 */
 .loading{
   background: white;
   position: fixed;
@@ -122,3 +108,210 @@ select::-ms-expand {
   margin: auto;
   z-index: 100; 
 }
+
+
+
+/* reset :: S */
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+
+ html,
+ body,
+ div,
+ span,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ abbr,
+ address,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ samp,
+ small,
+ strong,
+ sub,
+ sup,
+ var,
+ b,
+ i,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+     background: transparent;
+
+ }
+ 
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+ 
+ legend {
+     display: none;
+ }
+ 
+ nav ul,
+ li {
+     list-style: none;
+ }
+ 
+ blockquote,
+ q {
+     quotes: none;
+ }
+ 
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+ 
+ a {
+     margin: 0;
+     padding: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+     background: transparent;
+     text-decoration: none;
+ }
+ 
+ /* change colours to suit your needs */
+ 
+ ins {
+     background-color: #ff9;
+     color: #000;
+     text-decoration: none;
+ }
+ 
+ /* change colours to suit your needs */
+ 
+ mark {
+     background-color: #ff9;
+     color: #000;
+     font-style: italic;
+     font-weight: bold;
+ }
+ 
+ del {
+     text-decoration: line-through;
+ }
+ 
+ abbr[title],
+ dfn[title] {
+     border-bottom: 1px dotted;
+     cursor: help;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ 
+ /* change border colour to suit your needs */
+ 
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid #cccccc;
+     margin: 1em 0;
+     padding: 0;
+ }
+ 
+ input,
+ select {
+     outline: none;
+     vertical-align: middle;
+ }
+ 
+ textarea,
+ button {
+     outline: none;
+ }
+ 
+ /* 아이폰 input 둥근테두리 그림자 제거 */
+ 
+ input {
+     -webkit-appearance: none;
+     -webkit-border-radius: 0;
+ }
+ 
+ /* select 화살표 없애기 */
+ 
+ select {
+     background: white;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+ }
+ 
+ select::-ms-expand {
+     display: none;
+ }
